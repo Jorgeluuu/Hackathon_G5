@@ -1,0 +1,1 @@
+# Pydantic (entrada/salida API) para validar los datos

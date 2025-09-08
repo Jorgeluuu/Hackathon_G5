@@ -1,0 +1,69 @@
+# Entorno virtual
+venv/
+ENV/
+env/
+.venv/
+
+# Archivos de Python compilados
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Archivos de configuración/IDE
+.vscode/
+.idea/
+*.iml
+
+# Archivos de entorno
+.env
+.env.* 
+!.env.example
+
+# Archivos de logs
+*.log
+
+# Archivos de base de datos locales
+*.db
+*.sqlite3
+
+# Carpetas de pruebas/coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Caches
+.cache/
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+
+# Librerías descargadas
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+
+# Qodo-gen (AI generated files)
+.qodo-gen/
+
+# Otros
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
