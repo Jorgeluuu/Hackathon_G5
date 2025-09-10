@@ -1,0 +1,685 @@
+                  Nota de información: entrenamiento IA
+                                    24 de mayo de 2024
+
+
+INFORMACIÓN DE TRANSPORTE (METRO, BUS, CERCANÍAS, TREN DE LARGA DISTANCIA,
+TAXI….)
+
+
+1.Introducción general a la red de transporte de Madrid
+
+El transporte de Madrid comprende la red de comunicaciones multimodal que vertebra
+el movimiento de mercancías y viajeros tanto en el interior de la capital española como
+entre esta y otras ciudades. Engloba un conjunto de infraestructuras estratégicas para
+la integración y el desarrollo económico y social de la ciudad, ya que agiliza los
+desplazamientos humanos y las transacciones mercantiles. Es gestionada por
+diferentes entes públicos, destacando el Ministerio de Transportes del Gobierno de
+España, la Comunidad de Madrid y el Ayuntamiento de Madrid, cada uno con
+competencias sobre determinados medios de transporte. La red de transporte madrileña
+se halla en continua expansión y mejora, en paralelo a la expansión demográfica y
+urbanística que vive la ciudad. A grandes rasgos, podemos dividir el transporte de
+Madrid en público y privado.
+
+El transporte público de la ciudad de Madrid constituye un sistema privilegiado y de
+primer orden. Está protagonizado por su vanguardista sistema de metro, que posee
+actualmente cerca de 300 estaciones, repartidas en 12 líneas y un ramal. No es menor
+la importancia de la extensa red de Cercanías Madrid (gestionada por RENFE), que
+conecta la ciudad con los municipios circundantes (como Móstoles, Majadahonda o
+Alcalá de Henares); las líneas de autobús urbanas o interurbanas, esenciales en el
+transporte no ferroviario por superficie; o el Metro Ligero, un servicio tranviario que está
+presente en zonas muy concretas del oeste y norte de la capital. Todas estas formas de
+transporte son coordinadas por el Consorcio Regional de Transportes de Madrid.
+Cruciales son también las líneas de trenes de media y larga distancia y AVE que pasan
+por la capital, gestionadas por RENFE a partir de la infraestructura de Adif. Destaca
+igualmente el servicio de alquiler BiciMad, gestionado por el Ayuntamiento de Madrid.
+Estos medios de transporte no deben concebirse de forma independiente, pues el
+sistema favorece el intercambio multimodal entre distintos medios de transporte. De esta
+forma, los intercambiadores de transporte son piezas fundamentales en la articulación
+de la movilidad madrileña, como Moncloa, Avenida de América y Príncipe Pío.
+
+El transporte privado en Madrid, en contraste, está protagonizado por el automóvil. La
+red de carreteras de la ciudad, a menudo saturada por grandes retenciones en horas
+punta, incluye vías de circunvalación (M-30, M-40) y otras no radiales (M-12, M-203). El
+kilómetro cero de las carreteras nacionales de España (N-1, N-2) se halla en el corazón
+de la Puerta del Sol. También operan diferentes compañías de VTC dentro de la ciudad
+además del tradicional taxi.
+
+Por otro lado, Madrid posee una amplia red de carriles bici, que facilita ciertas rutas
+(como el Anillo Verde Ciclista).
+
+Finalmente, también hay que destacar que la ciudad de Madrid, al tratarse de la capital
+de España y de ser un nudo de comunicaciones, cuenta con una red radial de carreteras
+y autovías que conectan con todo el país, dos importantes estaciones de ferrocarril
+(Atocha y Chamartín), un aeropuerto internacional (Adolfo Suárez – Barajas) y varias
+
+                                      Página 1 de 13
+estaciones de autobuses que conectan con otras ciudades del país (Méndez Álvaro,
+Avenida de América, Moncloa, Príncipe Pío y Plaza Elíptica).
+
+2. Información básica para utilizar el transporte público de Madrid
+
+El transporte público de Madrid está dirigido por el consorcio regional de transportes
+regulares de Madrid (creado por ley 5/1985, de 16 de mayo), una sociedad pública
+dependiente de la Comunidad de Madrid.
+
+Para el uso de sus servicios, hay que pagar una serie de tarifas, ya sea en forma de
+billete, metrobús, abono transportes o abono turístico. Cada cual tiene unas
+características distintas de precio, duración y áreas abarcadas.
+
+   •   El billete sencillo sirve para un único viaje, y se adquiere en la misma estación o
+       medio que se quiere tomar. En algunos servicios, como el tren de cercanías,
+       pueden adquirirse billetes de ida y vuelta.
+
+   •   El metrobús es un título de transporte válido tanto en la red de metro como en la
+       de autobuses EMT de la red de transporte de Madrid. Permite la realización de
+       un total de 10 viajes dentro de la zona A de transportes de la capital.
+
+   •   El abono transporte es un título de transporte válido para las redes de metro,
+       cercanías, y autobuses urbanos o interurbanos. Permite la realización de un
+       número ilimitado de viajes durante su periodo de validez, ya sea mensual o
+       anual. Sus tarifas cambian según la edad de los usuarios, definidas en tres
+       rangos (abono joven, normal y tercera edad) y según las coronas, que son un
+       modelo definido por el Consorcio de Transportes, que organiza la Comunidad de
+       Madrid y algunos municipios de Toledo y Guadalajara en una serie de anillos
+       concéntricos.
+
+   •   Madrid City Card. El abono turístico tiene una validez entre uno y siete días, y
+       puede comprender dos zonas: la zona A, que es la misma que la del abono
+       transportes; y la zona T, que las comprende todas. Sus tarifas varían según la
+       edad, definida entre normal (a partir de 12 años) e infantil (hasta 11).
+
+Para más información sobre la gestión de la tarjeta de transporte público se puede
+consultar la web la tarjeta de transporte pública:
+
+https://tarjetatransportepublico.crtm.es/CRTM-ABONOS/home.aspx
+
+
+3. Modalidades de transporte público:
+
+3.1. Metro de Madrid:
+
+El metro de Madrid es una de las redes de transporte más eficientes de la ciudad.
+Actualmente el Metro de Madrid es la red de metro más extensa de la Unión Europea y
+la cuarta del mundo, con 293 km y 13 líneas (una de ellas es un ramal de la línea 2).
+
+El horario general de servicio durante todos los días del año es de 6:00 h a 1:30 h.
+Existen algunas estaciones con horario restringido.
+
+
+
+                                     Página 2 de 13
+A través de la web de Metro de Madrid puede consultar los trayectos disponibles,
+estaciones y planificar el viaje. Véase el siguiente enlace:
+
+https://www.metromadrid.es/es
+
+3.2. Metro Ligero:
+
+El Metro Ligero de Madrid es una red de tren ligero que une varias localidades del Área
+Metropolitana de la Comunidad de Madrid (España) con la ciudad de Madrid. Fue
+inaugurada el 24 de mayo de 2007. El sistema se encuentra integrado en el Consorcio
+Regional de Transportes de Madrid y, aunque comparte una imagen gráfica unificada,
+su gestión es independiente de la empresa Metro de Madrid. El Metro Ligero cuenta con
+3 líneas y 38 estaciones — tres de ellas con correspondencia con Metro de Madrid:
+Colonia Jardín, Las Tablas y Pinar de Chamartín. También existen otras dos estaciones
+en correspondencia con Cercanías: Aravaca y Fuente de la Mora.
+
+Aunque la titularidad del servicio corresponde al Gobierno de la Comunidad de Madrid,
+su gestión corre a cargo de dos empresas privadas en régimen de concesión: Metros
+Ligeros de Madrid S.A., concesionaria de la línea 1, y Metro Ligero Oeste S.A., que
+opera las líneas 2 y 3. Además, el tranvía de Parla se conoce como ML-4.
+
+El horario de servicio durante todos los días del año es de 6:00 h a 1:30 h para las líneas
+de Metro Ligero ML1, ML2 y ML3 y de 5:00 h a 00:45 h para ML4, Tranvía de Parla.
+
+A través de la web de Metro de Ligero se puede consultar los trayectos disponibles,
+estaciones y planificar el viaje. Véase el siguiente enlace:
+
+https://www.metrosligerosdemadrid.es/
+
+https://www.metroligero-oeste.es/
+
+3.3. Cercanías de Madrid:
+
+El actual servicio de Cercanías de Madrid, que explota Renfe Cercanías sobre las vías
+de Adif, posee una red a lo largo y ancho de la Comunidad de Madrid, llegando a la gran
+mayoría de la población e interconectando el servicio con el de Metro de Madrid en más
+de 20 estaciones.
+
+A finales de 2004, la Red Ferroviaria de Cercanías de Renfe de la Comunidad de Madrid
+contaba con nueve líneas en funcionamiento y una longitud de 370 km, con 101
+estaciones en total, 1.385 circulaciones diarias (en día laborable), pudiendo albergar un
+total de 880.000 viajeros. La plantilla de trabajadores consta de unos 1300 empleados.
+
+La totalidad de las líneas de la red, salvo la C-9 y la C-8 entre Villalba y Cercedilla, son
+de doble vía, y algunos trayectos de cuádruple, estando toda la red electrificada. La
+estación principal es Atocha-Cercanías, por la que pasan todas las líneas, excepto la ya
+mencionada C-9.
+
+El horario general de servicio es de 5:30 h a 23:30 h.
+
+A través de la web de Cercanías se puede consultar los trayectos disponibles,
+estaciones y planificar el viaje. Véase el siguiente enlace:
+
+https://www.renfe.com/es/es/cercanias/cercanias-madrid
+
+
+                                      Página 3 de 13
+3.4. Autobuses:
+
+Existe una red de autobuses urbanos gestionada, como el resto de la red de transporte
+público, por el Consorcio de Transportes de Madrid y por la Empresa Municipal de
+Transportes de Madrid, que cuenta con más de 1.994 vehículos y 194 líneas. Muchos
+habitantes de los barrios periféricos de la capital, la misma autonomía y provincias
+limítrofes utilizan los servicios del ferrocarril de cercanías y autobuses interurbanos para
+llegar a la capital y luego utilizar el metro. Por eso también la red de autobuses está
+ampliamente interconectada con los ferrocarriles. Los principales intercambiadores son
+los de Avenida de América, Moncloa y Plaza de Castilla, aunque hay otros menores
+como los de Conde de Casal, Méndez Álvaro, Príncipe Pío, Canillejas, Ciudad Lineal y
+Plaza Elíptica.
+
+Se pueden diferenciar diferentes tipos de autobuses:
+
+   •   Autobuses urbanos de Madrid: EMT
+
+El horario general de servicio durante todos los días del año es de 6:00 h a 23:30 h.
+Durante la madrugada funciona un servicio nocturno, conocido como Búho.
+
+Puede consultarse su web y obtener más información en:
+
+https://www.emtmadrid.es/Home
+
+   •   Autobuses urbanos de la Comunidad de Madrid
+
+El horario general de servicio durante todos los días del año es de 6:00 a 23:30 h.
+
+Puede consultarse su web y obtener más información en:
+
+https://crtm.es/tu-transporte-publico/otros-autobuses-urbanos/lineas
+
+   •   Autobuses interurbanos:
+
+El horario general de servicio durante todos los días del año es de 6:00 h a 23:30 h.
+Durante la madrugada funciona la red nocturna.
+
+Puede consultarse su web y obtener más información en:
+
+https://crtm.es/tu-transporte-publico/autobuses-interurbanos/lineas
+
+   •   Autobuses de largo recorrido
+
+Para viajar en las líneas de autobuses de largo recorrido, el Consorcio Regional de
+Transportes mantiene convenios que permiten la utilización del Abono Transportes
+hasta determinadas poblaciones de Castilla-La Mancha. Existen otros billetes no
+personales que se adaptan a las necesidades del viajero. Para obtener información
+sobre las tarifas de esos billetes, el usuario debe ponerse en contacto o consultar la web
+de las distintas operadoras.
+
+
+
+
+                                      Página 4 de 13
+3.5. Bicicletas:
+
+En Madrid dispones de varias opciones para alquilar una bici o bien incorporarte a
+alguna ruta guiada. La ciudad cuenta con el servicio bicimad y con diferentes centros
+especializados en bicicletas que ofrecen su alquiler, principalmente en las
+inmediaciones de los grandes parques y puntos más turísticos. Además, gracias a la
+iniciativa Madrid 360, de la que forma parte bicimad, la ciudad reafirma su compromiso
+con la sostenibilidad y la mejora de la protección ambiental.
+
+bicimad ofrece un servicio prestado al 100% con bicicletas eléctricas, práctico, sencillo
+y sostenible que cuenta con 7500 bicicletas y 611 estaciones y que destaca por el
+empleo de las tecnologías de la información.
+
+Puede consultarse su web y obtener más información en:
+
+https://www.bicimad.com/
+
+
+
+
+4. Transporte privado
+
+4.1. Taxi
+
+Los taxis de Madrid son blancos con una banda roja en diagonal en la puerta delantera
+y el escudo de la ciudad. Si llevan encendida la luz verde de la zona superior es que
+están libres. Los viajeros sólo tienen que darles el alto con la mano para que los recojan.
+
+Existen además muchas paradas de taxi por toda la ciudad señaladas con un cartel azul
+y la letra “T” en blanco. En las estaciones de tren y autobús y en el aeropuerto, hay que
+tomarlos en las paradas correspondientes. En el resto de la ciudad se pueden parar por
+la calle.
+
+En Madrid hay más de 15 000 taxis, por lo que no suele resultar un problema encontrar
+uno libre en las principales vías de la ciudad. Todos los vehículos aceptan el pago con
+tarjeta de crédito y también se puede pagar en efectivo (los taxistas están obligados a
+disponer de moneda fraccionaria en cantidad suficiente para facilitar cambio al usuario
+hasta el importe de 20 euros). Cabe destacar que algunos taxis disponen de servicio wifi
+a disposición de los pasajeros. Además, al igual que los VTC (vehículos de transporte
+con conductor), se pueden contratar con precio cerrado.
+
+En el caso de querer viajar en taxi acompañado por un bebé o un niño, existen taxis
+adaptados que disponen de sillas homologadas para un desplazamiento con niños.
+Antes de realizar el viaje es necesario informar de ello al conductor para que disponga
+de todas las necesidades. Para los interesados en viajar acompañados de un animal,
+salvo que se trate de perros guía, en cuyo caso los conductores tienen la obligación de
+admitirlos, cada taxista decidirá la opción de permitir su presencia en el viaje. Cabe
+destacar que existen compañías de taxis dogfriendly que admiten su presencia.
+
+Existe una tarifa fija de aeropuerto de 33 euros, que se aplica las 24 horas de todos los
+días del año para los servicios con origen o destino en el aeropuerto y destino u origen
+en el área interior de la M-30. Cabe destacar que, en los momentos de urgencia o
+excesiva prisa, es preferible optar por el servicio de taxis que, por razones de ordenación
+normativa, cuentan con prioridad a la hora de circular por determinadas calles, como por
+ejemplo para acceder a las zonas de salidas del aeropuerto.
+
+                                      Página 5 de 13
+Consulta las tarifas
+Aplicación oficial del taxi de Madrid TXMAD:
+
+Descárgatela en: Apple Store: IOS-TXMAD // Google Play: Android-TXMAD
+
+4.2. VTC:
+
+Madrid ofrece variadas opciones de transporte para moverse por la ciudad. Una de ellas
+son los VTC, Vehículos de Transporte con Conductor, que es como se denominan a los
+coches con chófer que pueden trasladar a uno o varios pasajeros a un destino y que
+tienen que llevar siempre una pegatina visible en la que aparece el distintivo de la
+autonomía donde ofrece su servicio. Las empresas más conocidas que ofrecen este tipo
+de servicio son Uber o Cabify.
+
+La mayoría de los VTC tienen un servicio prepago y precios que se calculan con
+anterioridad, donde se paga el importe al final del recorrido realizado. Por su parte, los
+VTC no pueden atender clientes por la calle como los taxis y sólo pueden ofrecer su
+servicio a través de su aplicación móvil, en la que se fijan los puntos de recogida y
+destino.
+
+Cómo funcionan las plataformas VTC
+
+Por lo general, el servicio de las plataformas VTC es bastante sencillo. Después de
+descargar la aplicación, hay que registrarse introduciendo nombre, correo electrónico y
+teléfono, además de los datos bancarios. Y ya puedes pedir un servicio. Una vez que
+elijas la dirección de origen y destino, hay que indicar cuándo quieres que te recojan y
+con qué vehículo. Se paga por la propia aplicación después de recibir la información de
+cuánto te va a costar. Las cancelaciones son gratuitas si se hacen al menos con una
+hora de antelación y los métodos de pago suelen ser por medio de PayPal o por tarjeta
+bancaria.
+
+   •   Cabify
+
+La empresa se formó en 2011 en Madrid y está presente en 44 ciudades de numerosos
+países. Los vehículos Cabify son de lujo, tienen una apariencia elegante, puedes
+solicitar la música que deseas escuchar o la temperatura que te sea más agradable. En
+su flota existen diferentes tipos de coche: Lite (vehículos con conductores vestidos de
+manera informal), Electric (vehículos eléctricos para 3 ocupantes y 2 maletas), Executive
+(coches de lujo con el chófer vestido de traje), Group (monovolumen de 7 plazas para 6
+ocupantes) o Cabify Baby (coches con sistema de retención infantil).
+
+Descargar aplicación Cabify: App Store / Google Play
+VTC en Madrid - Cabify
+
+   •   Uber
+
+Empresa internacional que opera prácticamente en todo el mundo y que permite usar la
+misma aplicación móvil en cualquier país, lo que facilita al turista el uso de este servicio
+si ya dispone de la app descargada. Se puede solicitar un viaje con hasta 30 días de
+antelación en cualquier momento y cualquier día del año. Las opciones de Madrid para
+traslados de 1 a 4 personas son: UberX Saver, con tarifas baratas; UberX, viajes
+asequibles con VTC y Taxi; Black, viajes en vehículos de gama alta; Comfort; vehículos
+amplios y cómodos con los conductores mejor valorados; y Van, viajes económicos para
+
+
+                                      Página 6 de 13
+grupos grandes de 1 a 6 personas. Uber permite compartir gastos entre dos o más
+pasajeros.
+
+Descargar aplicación Uber: App Store / Google Play
+Otras empresas con licencias VTC
+
+   •   Auro New Transport
+
+Ofrece un servicio que se adapta a las necesidades del usuario, visitas de negocios,
+grandes actos o eventos políticos y comerciales; aeropuertos y estaciones de tren;
+transporte y desplazamientos para eventos deportivos; celebraciones y eventos
+especiales; y excursiones, con visitas a ciudades cercanas a Madrid como Toledo, Ávila
+o Segovia.
+
+Descargar aplicación Auro New Transport: App Store / Google Play
+
+   •   Bolt
+
+Plataforma de movilidad líder en Europa que cuenta con más de 50 millones de usuarios
+en más de 40 países. En Madrid existen diferentes opciones de contratación: Bolt, el
+más rápido y adecuado; Executive, de gama alta; Comfort, espacioso y cómodo; y Van,
+perfecto para grupos, hasta 6 personas.
+
+Descargar aplicación Bolt: APP Store / Google Play
+
+   •   EasyMoveVTC
+
+Conductores profesionales a cualquier hora con transfers al aeropuerto incluyendo el
+servicio de chóferes bilingües en inglés e italiano, viajes turísticos por la ciudad y
+servicios a empresas con amplia experiencia en productoras de televisión.
+
+Descargar aplicación Bolt: Google Play
+
+   •   VTC Madrid Sur
+
+Especializada en traslados business, viajes, recogidas en Aeropuerto, estaciones,
+Leganés, Getafe, Fuenlabrada, Pinto, Alcorcón, Valdemoro, Toledo o desplazamientos
+de largo recorrido a cualquier punto de la península.
+
+4.3. Coches compartidos:
+Madrid es una de las ciudades europeas con más oferta de empresas de coches
+compartidos. Aunque la red de transporte público es excelente, este servicio es una
+opción perfecta para los turistas que no se desplazan a Madrid en coche y en un
+determinado momento de su visita necesitan uno.
+El funcionamiento es muy sencillo: debes registrarte en cualquiera de las plataformas
+que operan en la ciudad (algunas de ellas funcionan en otras ciudades de España y
+Europa), facilitar una tarjeta de crédito y abrir la aplicación, donde podrás ver los
+vehículos disponibles. Basta con elegir el coche que más te interese, desbloquearlo
+desde la aplicación y ponerlo en marcha con las llaves que encontrarás en la guantera.
+Una vez finalices el viaje, vuelves a colocar la llave en el lugar donde la encontraste y
+debes comunicar, también a través de la aplicación, que el servicio ha finalizado.
+A continuación, enumeramos las compañías de “carsharing” que operan en Madrid:
+
+                                     Página 7 de 13
+   •   Share Now:
+
+La compañía cuenta ya con una flota de 950 vehículos, de los que 300 son del modelo
+cuatro plazas, los tipos de coche que pone a disposición son Fiat500e (eléctricos) y
+Peugeot 208e (eléctricos).
+Descárgate la aplicación SHARE NOW: Apple Store / Google Play
+
+   •   Free2Move:
+
+Es otra de las compañías pioneras, y la empresa EMOV opera dentro de ella. Cuenta
+con una flota que supera los 600 vehículos, la mayoría Citroën C-Zero, un modelo 100%
+eléctrico. Son coches con una autonomía media de 150 kilómetros. También cuentan
+con furgonetas Citroën Berlingo Full Electric y vehículos Peugeot e-208, aunque estas
+últimas flotas son más limitadas. También ofrecen la opción del alquiler a corto plazo,
+desde un día hasta un mes.
+Sólo necesitas un documento de identidad, una tarjeta bancaria y el carné de identidad.
+Todo es “online”, así que únicamente tienes que descargarte la aplicación desde la
+página web. Suele ofrecer códigos promocionales para los usuarios que se estrenan.
+Algunos vehículos incluyen sillitas homologadas de la marcha Chicco para bebés.
+Descárgate la aplicación Free2Move: Apple Store / Google Play
+
+   •   Wible:
+
+Esta compañía defiende que sus servicios y vehículos llegan hasta donde otros no
+pueden. Y esto se debe a la cooperación existente entre Kia y Repsol. En Madrid tiene
+una flota de vehículos 500 Kia Niro PHEV de cinco plazas y con gran autonomía (600
+kilómetros). No sólo ofrece servicio a la almendra central de la ciudad, sino que también
+está operativa en la zona norte de Madrid, desde Mirasierra hasta Las Tablas y
+Sanchinarro.
+En la zona este, funciona en la zona de Arturo Soria, Alcalá y los barrios de Quintana y
+de la Concepción. Y en el oeste, llega hasta el perímetro de Ciudad Universitaria y la
+M30. Sólo tienes que descargarte en tu smartphone la aplicación de WiBle y, después
+de registrarte, podrás acceder a cualquiera de los vehículos híbridos enchufables que
+ofrece la compañía. Únicamente tienes que facilitar tu usuario desde la app y, a partir
+de ese momento, podrás realizar reservas siempre que lo necesites y consultar el estado
+de carga del vehículo.
+Descárgate la aplicación WIBLE: Apple Store / Google Play
+
+   •   Zity:
+
+Estamos ante un servicio de “carsharing” flexible pensado para todas las necesidades
+del usuario. Está operado por Renault y Ferrovial. Funciona en Madrid desde 2016 y
+tiene una flota de 800 vehículos que podrás utilizar según te interese. Los coches son
+Renault Zoe ZE40, 100% eléctricos y cero emisiones, con cinco plazas, un amplio
+maletero y una autonomía real de 300 kilómetros. Además, puedes salir con ellos fuera
+de los 104 kilómetros cuadrados de la Zona ZITY. No necesitas llaves, no hay límite de
+kilómetros ni letras pequeñas y cuenta con una tarifa reducida, Stand By, para que
+hagas altos en el camino sin perder el alquiler de tu coche. La empresa presta servicio
+en el Aeropuerto Adolfo Suárez Madrid-Barajas.
+
+                                     Página 8 de 13
+Descárgate la aplicación ZITY: Apple Store / Google Play
+
+   •   GoTo Global:
+
+Empresa israelí de servicio de alquiler de coche por horas y días para recoger y devolver
+en el mismo parking en el que se coge o para recoger y dejar en la calle. Muchos
+modelos automáticos y manuales (Fiat 500, Nissan Micra, Renault Megane, Opel Corsa,
+Toyota Proace y Citroen Jumpy) en una flota de 500 coches y 140 furgonetas (también
+ofrece alquiler de motos y patinetes).
+Descárgate la aplicación GoTo Global: Apple Store / Google Play
+
+   •   Voltio:
+
+Mutua Madrileña ha lanzado la compañía de carsharing Voltio que dispone de una flota
+de vehículos 100% eléctricos. Una flota que se compone de 400 coches Fiat 500e y 100
+coches Opel Corsa-e. Este nuevo proyecto mantiene un firme compromiso con la
+movilidad urbana sostenible y los modelos de transporte no contaminantes. Voltio
+funciona de manera similar al resto de servicios de movilidad compartida, el usuario
+debe descargar la aplicación y registrarse. La apertura y cierre del vehículo seleccionado
+se hace desde el móvil.
+Descárgate la aplicación Voltio: Apple Store / Google Play
+
+   •   Ubeeqo:
+
+Sólo hay que dar tres pasos para acceder a uno de los más de 300 vehículos con que
+cuenta esta plataforma de “carsharing”: regístrate y alquila coches por horas o por días,
+selecciona el vehículo que deseas, elige el día y la hora de inicio. Y cuando termines,
+sólo debes devolver el coche al mismo lugar de aparcamiento. Eso es todo. Tienes 30
+kilómetros, el seguro y la gasolina incluidos en cada reserva, y puedes acceder sin
+restricciones a Madrid Central.
+Descárgate la aplicación UBEEQO: Apple Store / Google Play
+
+4.4. Motos compartidas:
+Los servicios de “motosharing” permiten al usuario, por muy poco dinero, acceder a un
+vehículo de dos ruedas durante periodos concretos de tiempo y resolver cómodamente
+problemas de movilidad temporal. Además, se trata de vehículos amigables con el
+medio ambiente, pues disminuyen la huella ecológica generada por los combustibles
+fósiles, ya que el 97% de los servicios ofrecen vehículos eléctricos. Por eso, la
+implantación de estas plataformas continúa creciendo.
+Con sólo registrar tus datos personales, e introducir una cuenta bancaria y el número de
+tu permiso de conducir, puedes acceder a un gran número de motocicletas, que están
+repartidas por toda la ciudad.
+Concebido para realizar recorridos cortos, el servicio tiene un coste económico en
+función de los minutos que utilices la motocicleta. El precio depende de la compañía que
+elijas, pero hay una tarifa media de unos 5 € para un trayecto de 20 minutos. Además,
+el motosharing forma parte integrante del compromiso de Madrid con el medio ambiente
+a través de la iniciativa Madrid 360 / Zonas de Bajas emisiones.
+
+
+
+                                     Página 9 de 13
+¿Cómo funciona el servicio? Con la aplicación en la que te has registrado, debes buscar
+el vehículo más cercano a tu posición y reservarlo. Después, tendrás que devolverla
+dentro de los límites geográficos en los que opera la plataforma. Todas las motos llevan
+incorporado un casco y, en ocasiones, dos, por lo que no te tienes que preocupar de
+este elemento de seguridad. En general, hablamos de motos scooter eléctricas, por lo
+que no necesitan combustible.
+A continuación, enumeramos las compañías más importantes que operan en Madrid:
+
+   •   Acciona Motosharing:
+
+Esta compañía comenzó sus operaciones de alquiler de motos eléctricas en Madrid a
+finales de 2018 y después extendió su influencia a Valencia, Barcelona, Sevilla y Lisboa.
+Sólo en Madrid, cuenta con más de 1000 motos de 125 centímetros cúbicos, pero su
+cobertura en Europa ya alcanza en total más de las 3 000 unidades. Para utilizar este
+servicio, basta con registrar tus datos en la app de la empresa y, en menos de un día,
+podrás comenzar a disfrutar del servicio. Existen tres opciones y tarifas: Standard S,
+Custom C y Xtra X. También hay una tarifa de pausa hasta seis horas y además, se
+pueden conseguir bonos por tiempo de uso con tarifas especiales. No existe cuota de
+alta y el servicio se ofrece dentro del área de la M30.
+Descárgate la aplicación ACCIONA MOTOSHARING: Apple Store / Google Play
+
+   •   Cooltra:
+
+Esta empresa ofrece una tarifa general y también brinda paquetes interesantes
+denominados CoolPacks. En la actualidad, cuenta con una numerosa flota de motos
+eléctricas alemanas y pueden alquilarse durante las 24 horas de cualquier día de la
+semana. La autonomía media es de 47 kilómetros y las motos se hallan repartidas por
+toda la almendra central de la ciudad, dentro del área interior de la M30.
+Descárgate la aplicación COOLTRA: Apple Store / Google Play
+
+   •   Cabify:
+
+La empresa de “motosharing” de Cabify opera en Madrid desde 2018 con una gran flota
+de motos eléctricas que tienen una autonomía de 50 kilómetros. Las motos son 100%
+eléctricas por minutos y disponen de dos cascos. El servicio opera dentro del área de la
+M30 (que comprende los 8 distritos de Centro, Arganzuela, Retiro, Salamanca,
+Chamartín, Tetuán, Chamberí2 y Moncloa-Aravaca) en 10 de los 21 distritos de Madrid
+(parcialmente en Ciudad Lineal).
+Descárgate la aplicación CABIFY: Apple Store / Google Play
+
+
+
+
+                                    Página 10 de 13
+5. Otros servicios:
+
+5.1. Autobuses turísticos:
+
+Los autobuses turísticos son una de las maneras más cómodas y sencillas de conocer
+la ciudad. Este transporte es muy útil para aquellas personas que visitan Madrid por
+primera vez puesto que gracias a sus recorridos pueden planificar y localizar los lugares
+que prefieren visitar durante sus días de estancia. Es tan fácil como comprar el billete,
+montarse en el autobús, colocarse los auriculares para seguir la audioguía y disfrutar de
+las calles, los monumentos y los puntos de interés, con la posibilidad de bajarse donde
+más apetezca. Consulta las diferentes opciones que se ofertan en la ciudad para
+escoger el autobús que mejor se adapte a tus necesidades.
+
+5.2. Bus exprés al aeropuerto:
+
+Madrid cuenta con un servicio transporte que conecta el centro de la ciudad con el
+aeropuerto de Barajas. La línea circula las 24 horas del día todos los días del año (con
+horarios reducidos 24, 25 y 31 diciembre y 1 enero) con salida desde la estación de
+Atocha en horario diurno (06:00 – 23:30 h) y la estación de Cibeles en horario diurno y
+nocturno (23:30 – 06:00 h). Este servicio supone un gran beneficio para las personas
+con vuelos nocturnos.
+
+El autobús, denominado “Exprés Aeropuerto”, recorre el trayecto en aproximadamente
+30 minutos (hasta la T1, cinco minutos más hasta la T2 y otro cinco más hasta la T4).
+Tiene una frecuencia de paso de 15-20 minutos en horario diurno y 35 minutos en
+horario nocturno. El precio del billete es de 5 euros. Puedes pagar en el propio autobús
+en efectivo (cambio máximo: 20 euros) o con tecnología sin contacto (contactless) con
+tarjeta bancaria o móvil.
+
+La línea Exprés 203 (Atocha- Aeropuerto) realiza una conexión entre el Aeropuerto de
+Madrid-Barajas, el centro de Madrid (Cibeles) y la estación intermodal de Atocha. La
+cabecera de línea del servicio se encuentra en la T4 y cuenta con paradas en la T2, T1,
+O'Donnell (en la confluencia con Doctor Esquerdo), Plaza de Cibeles (punto neurálgico
+de los servicios nocturnos de la EMT, los búhos) y Estación de Atocha (operativa entre
+las 06:00 y 23:30 horas).
+
+Esta línea especial es fácilmente identificable por su color amarillo. Los autobuses
+cuentan con modernos portaequipajes para hacer el trayecto a los usuarios lo más
+cómodo posible. Se puede llevar cualquier tipo de equipaje (maleta, trolleys y bolsas de
+viaje) con peso inferior a 23 kilogramos, y forma y tamaño admitidos en los estándares
+de Aviación Civil. El equipaje debe estar colocado de modo que no suponga un peligro
+para uno mismo y el resto de viajeros. El transporte de equipaje no supone ninguna tasa
+añadida, está incluido en el precio de billete. Los autobuses cuentan con un
+portabicicletas trasero con raíles y anclajes para dos bicicletas convencionales.
+
+Es uno de los sistemas más baratos y cómodos, en comparación con Europa y el mundo,
+ya que podemos alcanzar el centro de la ciudad desde el aeropuerto y viceversa por tan
+sólo 5 euros, tardando sólo 40 minutos. Cabe destacar que los días de temporada
+navideña como el 24, 25 y 31 de diciembre y el 1 de enero el servicio no se efectúa con
+normalidad.
+
+Puedes encontrar información más detallada accediendo al siguiente enlace.
+
+
+                                    Página 11 de 13
+https://www.emtmadrid.es/Aeropuerto
+
+6. Red de carreteras
+
+Madrid tiene una serie de carreteras de circunvalación a su alrededor. Estas son la M-
+30, que delimita la almendra central de la ciudad, la M-40, en los barrios residenciales
+de la ciudad, la M-45, bordeando el municipio, y la M-50, en el área metropolitana. Estas
+autovías sirven para evitar que, para dirigirse de un punto a otro de la periferia, haya
+que atravesar la ciudad.
+
+Esta red de circunvalación se suma otra de esquema radial, de la cual las autovías más
+importantes son las conocidas nacionales:
+
+A-1: Madrid-Aranda de Duero-Burgos-Miranda de Ebro-Vitoria-San Sebastián-Irún-
+Frontera francesa.
+A-2: Madrid-Zaragoza-Lérida-Barcelona-Gerona-Frontera Francesa.
+A-3: Madrid-Valencia.
+A-4: Madrid-Córdoba-Sevilla-Cádiz.
+A-5: Madrid-Talavera de la Reina-Trujillo-Mérida-Badajoz-Lisboa.
+A-6: Madrid-Medina del Campo-Benavente-Ponferrada-Lugo-La Coruña.
+A-42: Madrid-Illescas-Toledo.
+M-607: Madrid-Tres Cantos-Colmenar Viejo.
+
+
+
+7. Cómo viajar desde Madrid a otras partes de España o del mundo
+
+Para realizar viajes nacionales e internacionales Madrid dispone de dos importantes
+estaciones de tren y un aeropuerto internacional:
+
+   •   El Aeropuerto Adolfo Suárez Madrid-Barajas:
+
+ Aeropuerto español público propiedad de Aena, situado a 12 km del centro de la ciudad
+de Madrid dirección noreste.
+
+Para más información se puede consultar en el siguiente enlace:
+
+https://www.aena.es/es/adolfo-suarez-madrid-barajas.html
+
+
+   •   Estación de atocha:
+
+La estación de Atocha es un complejo ferroviario situado en las cercanías de la plaza
+del Emperador Carlos V, en Madrid (España). Hace las funciones de nudo ferroviario, y
+esto la convierte en la estación con más tráfico de pasajeros del país, así como una de
+las principales de Europa.
+
+Registró en 2015 un tráfico de 108 millones de pasajeros; correspondiendo 87 millones
+al servicio de Cercanías, 17 millones a la larga distancia y AVE y 2,6 millones a los
+servicios regionales de Media Distancia.1 El complejo ferroviario es un conjunto de
+estaciones y de edificios ubicados en la zona.
+
+Se puede consultar la página de Renfe donde comprar billetes en el siguiente enlace:
+
+                                    Página 12 de 13
+https://www.renfe.com/es/es
+
+
+   •   Madrid-Chamartín-Clara Campoamor:
+
+Es un complejo ferroviario de la ciudad de Madrid, situado en el distrito de Chamartín,
+en la zona norte de la capital española. Además de constituir un importante nudo
+ferroviario, Madrid-Chamartín funciona también como gran intercambiador de
+transportes, al prestar servicios de tren, metro y autobús.
+
+Se puede consultar la página de Renfe donde comprar billetes en el siguiente enlace:
+
+https://www.renfe.com/es/es
+
+
+Fuentes:
+
+https://www.comunidad.madrid/servicios/transporte/muevete-transporte-publico
+
+https://www.esmadrid.com/
+
+https://www.esmadrid.com/taxi-madrid
+
+https://www.esmadrid.com/moverse-por-madrid
+
+https://www.esmadrid.com/vtc-madrid
+
+https://es.wikipedia.org/wiki/Transporte_en_Madrid
+
+https://es.wikipedia.org/wiki/Estaci%C3%B3n_de_Madrid-Chamart%C3%ADn-
+Clara_Campoamor
+
+https://es.wikipedia.org/wiki/Aeropuerto_Adolfo_Su%C3%A1rez_Madrid-Barajas
+
+https://es.wikipedia.org/wiki/Estaci%C3%B3n_de_Atocha
+
+
+
+
+                                    Página 13 de 13
+

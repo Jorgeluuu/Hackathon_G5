@@ -1,22 +1,22 @@
 # Configuración (env vars)
-
+from dotenv import load_dotenv
 import os
 import requests
 import logging
 
+load_dotenv()
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 class PlannerAgent:
-    def __init__(self, groq_api_key: str, model: str = "deepseek-r1-distill-llama-70b"):
+    def __init__(self, groq_api_key: str, model: str = "deepseek-r1-distill-llama-70b"): # Aseguramos un modelo conocido
         self.groq_api_key = groq_api_key or os.getenv("GROQ_API_KEY")
         if not self.groq_api_key:
             raise ValueError("GROQ_API_KEY is not set in environment variables or provided.")
         self.model = model
-        self.endpoint = "https://api.groq.com/v1/chat/completions"
+        self.endpoint = "https://api.groq.com/openai/v1/chat/completions"
 
-
-    def _ask_groq(self, prompt: str) -> str:
+    def invoke(self, prompt: str) -> str:
         """
         Envía el prompt a la API de GROQ y devuelve la respuesta.
         """
@@ -25,8 +25,9 @@ class PlannerAgent:
             "Content-Type": "application/json"
         }
         data = {
-            "model": self.model,  # Cambia el modelo si es necesario
+            "model": self.model,
             "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0.7, # Añadimos el parámetro temperature
         }
 
         try:
@@ -51,13 +52,12 @@ class PlannerAgent:
             raise
 
 class BackupAgent:
-    def __init__(self, groq_api_key: str, model: str = "gemma2-9b-it"):
+    def __init__(self, groq_api_key: str, model: str = "mixtral-8x7b-32768"): # Aseguramos un modelo conocido
         self.groq_api_key = groq_api_key or os.getenv("GROQ_API_KEY")
         if not self.groq_api_key:
             raise ValueError("GROQ_API_KEY is not set in environment variables or provided.")
         self.model = model
-        self.endpoint = "https://api.groq.com/v1/chat/completions"
-
+        self.endpoint = "https://api.groq.com/openai/v1/chat/completions" # Unificamos el endpoint
 
     def invoke(self, prompt: str) -> str:
         """
@@ -68,8 +68,9 @@ class BackupAgent:
             "Content-Type": "application/json"
         }
         data = {
-            "model": self.model,  # Cambia el modelo si es necesario
+            "model": self.model,
             "messages": [{"role": "user", "content": prompt}],
+            "temperature": 0.7, # Añadimos el parámetro temperature
         }
 
         try:
@@ -94,7 +95,7 @@ class BackupAgent:
             raise
 
 
-def get_llm(model_name: str = "gemma2-9b-it", provider: str = "groq"):
+def get_llm(model_name: str = "", provider: str = ""):
     """
     Devuelve el agente adecuado.
     - Si el proveedor es GROQ y la clave está disponible, intenta crear PlannerAgent.
