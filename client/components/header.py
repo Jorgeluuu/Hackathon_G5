@@ -3,7 +3,6 @@ import dash_bootstrap_components as dbc
 
 
 def create_header():
-    """Crear el header principal de la aplicación"""
     return html.Header([
         dbc.Navbar([
             dbc.Container([
@@ -77,7 +76,6 @@ def create_header():
 
 
 def create_floating_elements():
-    """Crear elementos flotantes decorativos"""
     return html.Div([
         html.Div("⭐", className="floating-star star-1"),
         html.Div("✨", className="floating-star star-2"),

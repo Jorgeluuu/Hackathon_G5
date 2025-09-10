@@ -3,7 +3,7 @@ import dash_bootstrap_components as dbc
 
 
 def create_results_section():
-    """Crear la sección de resultados del itinerario"""
+    """Sección de resultados del itinerario"""
     return html.Div([
         html.Div([
             html.H3([
@@ -22,7 +22,6 @@ def create_results_section():
 
 
 def create_placeholder_content():
-    """Crear contenido placeholder antes de generar el itinerario"""
     return dbc.Card([
         dbc.CardBody([
             html.Div([
@@ -72,7 +71,7 @@ def create_placeholder_content():
 
 
 def create_itinerary_card(day_info):
-    """Crear una tarjeta individual para un día del itinerario"""
+    """Tarjeta individual para un día del itinerario"""
     return dbc.Card([
         dbc.CardHeader([
             html.Div([
@@ -100,7 +99,6 @@ def create_itinerary_card(day_info):
 
 
 def create_activities_timeline(activities):
-    """Crear timeline de actividades del día"""
     if not activities:
         return html.Div()
     
@@ -145,7 +143,6 @@ def create_activities_timeline(activities):
 
 
 def create_restaurants_section(restaurants):
-    """Crear sección de restaurantes recomendados"""
     if not restaurants:
         return html.Div()
     
@@ -182,7 +179,6 @@ def create_restaurants_section(restaurants):
 
 
 def create_magical_tip(tip_text):
-    """Crear el consejo mágico del Ratoncito Pérez"""
     if not tip_text:
         return html.Div()
     
@@ -201,7 +197,6 @@ def create_magical_tip(tip_text):
 
 
 def create_summary_card(itinerary_data):
-    """Crear tarjeta resumen del itinerario"""
     return dbc.Card([
         dbc.CardHeader([
             html.H5("📋 Resumen de tu Aventura", className="summary-title")

@@ -5,15 +5,8 @@ import json
 
 
 class FastAPIClient:
-    """Cliente para interactuar con la API del Ratoncito Pérez"""
     
     def __init__(self, base_url: str = "http://localhost:8000"):
-        """
-        Inicializar cliente API
-        
-        Args:
-            base_url: URL base de la API FastAPI
-        """
         self.base_url = base_url.rstrip("/")
         self.session = requests.Session()
         self.session.headers.update({
@@ -28,12 +21,6 @@ class FastAPIClient:
     def generate_itinerary(self, planning_data: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         """
         Generar itinerario basado en las preferencias del usuario
-        
-        Args:
-            planning_data: Datos del formulario de planificación
-            
-        Returns:
-            Diccionario con el itinerario generado o None si hay error
         """
         try:
             endpoint = f"{self.base_url}/api/v1/itinerary/generate"
@@ -69,13 +56,6 @@ class FastAPIClient:
     def chat_with_mouse(self, message: str, context: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         """
         Enviar mensaje al chat del Ratoncito Pérez
-        
-        Args:
-            message: Mensaje del usuario
-            context: Contexto adicional (itinerario actual, etc.)
-            
-        Returns:
-            Respuesta del Ratoncito Pérez
         """
         try:
             endpoint = f"{self.base_url}/api/v1/chat"
@@ -108,13 +88,6 @@ class FastAPIClient:
     def get_recommendations(self, category: str, filters: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         """
         Obtener recomendaciones específicas (restaurantes, hoteles, etc.)
-        
-        Args:
-            category: Tipo de recomendación ('restaurants', 'hotels', 'activities')
-            filters: Filtros a aplicar
-            
-        Returns:
-            Lista de recomendaciones
         """
         try:
             endpoint = f"{self.base_url}/api/v1/recommendations/{category}"
@@ -139,12 +112,6 @@ class FastAPIClient:
     def _create_fallback_itinerary(self, planning_data: Dict[str, Any]) -> Dict[str, Any]:
         """
         Crear un itinerario de respaldo cuando la API no está disponible
-        
-        Args:
-            planning_data: Datos originales del formulario
-            
-        Returns:
-            Itinerario básico de ejemplo
         """
         duration = planning_data.get("duration_days", 2)
         destination = planning_data.get("destination", "Madrid Centro")
@@ -220,12 +187,6 @@ class FastAPIClient:
     def _create_fallback_chat_response(self, user_message: str) -> Dict[str, Any]:
         """
         Crear respuesta de chat de respaldo
-        
-        Args:
-            user_message: Mensaje original del usuario
-            
-        Returns:
-            Respuesta genérica del Ratoncito Pérez
         """
         
         # Respuestas basadas en palabras clave
@@ -294,9 +255,6 @@ Puedo ayudarte con:
     def test_connection(self) -> bool:
         """
         Probar la conexión con la API
-        
-        Returns:
-            True si la API está disponible, False en caso contrario
         """
         try:
             response = self.session.get(f"{self.base_url}/health", timeout=5)
