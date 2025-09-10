@@ -1,26 +1,22 @@
 COLORS = {
-    # Colores principales
-    "primary": "#8B4513",      # Marrón ratón
-    "secondary": "#DEB887",    # Beige claro
-    "accent": "#FFD700",       # Dorado mágico
-    "success": "#32CD32",      # Verde mágico
-    "warning": "#FFA500",      # Naranja advertencia
-    "danger": "#DC143C",       # Rojo peligro
-    "info": "#87CEEB",         # Azul información
+    "primary": "#8B4513",      
+    "secondary": "#DEB887",   
+    "accent": "#FFD700",       
+    "success": "#32CD32",      
+    "warning": "#FFA500",     
+    "danger": "#DC143C",      
+    "info": "#87CEEB",        
     
-    # Colores de fondo
-    "background_primary": "#FFF8DC",    # Crema
-    "background_secondary": "#F5F5DC",  # Beige
-    "background_dark": "#8B4513",       # Marrón oscuro
+    "background_primary": "#FFF8DC",   
+    "background_secondary": "#F5F5DC",  
+    "background_dark": "#8B4513",       
     
-    # Colores de texto
-    "text_primary": "#2F4F4F",     # Gris oscuro
-    "text_secondary": "#696969",   # Gris medio
-    "text_light": "#FFFFFF",       # Blanco
-    "text_muted": "#A9A9A9"        # Gris claro
+    "text_primary": "#2F4F4F",   
+    "text_secondary": "#696969",   
+    "text_light": "#FFFFFF",       
+    "text_muted": "#A9A9A9"       
 }
 
-# Mensajes del Ratoncito Pérez
 MESSAGES = {
     "welcome": [
         "¡Hola! Soy el Ratoncito Pérez y estoy aquí para hacer tu viaje mágico 🐭✨",
@@ -52,7 +48,6 @@ MESSAGES = {
     ]
 }
 
-# Configuraciones de la aplicación
 APP_CONFIG = {
     "app_name": "Planificador Mágico del Ratoncito Pérez",
     "version": "1.0.0",
@@ -69,7 +64,6 @@ APP_CONFIG = {
     "max_message_length": 500
 }
 
-# Datos de Madrid para el fallback
 MADRID_DATA = {
     "destinations": {
         "Madrid Centro": {
@@ -206,7 +200,6 @@ MADRID_DATA = {
     ]
 }
 
-# Mapeo de intereses a categorías
 INTERESTS_MAPPING = {
     "museums": "museums",
     "parks": "parks", 
@@ -220,17 +213,15 @@ INTERESTS_MAPPING = {
     "learning": "learning"
 }
 
-# Configuración de edad para actividades
 AGE_GROUPS = {
-    "toddlers": (0, 4),      # Bebés y niños pequeños
-    "children": (5, 12),      # Niños
-    "teens": (13, 17),        # Adolescentes
-    "adults": (18, 99),       # Adultos
-    "families": (0, 99),      # Todas las edades
-    "older_children": (8, 99) # Niños mayores y adultos
+    "toddlers": (0, 4),      
+    "children": (5, 12),      
+    "teens": (13, 17),        
+    "adults": (18, 99),       
+    "families": (0, 99),      
+    "older_children": (8, 99) 
 }
 
-# Frases motivacionales del Ratoncito Pérez
 MOTIVATIONAL_PHRASES = [
     "¡Cada diente que recojo me cuenta una historia de aventura! 🦷✨",
     "Madrid está lleno de magia, solo hay que saber dónde buscar 🔍💫",
@@ -240,7 +231,6 @@ MOTIVATIONAL_PHRASES = [
     "¡Los mejores recuerdos se crean en familia! 👨‍👩‍👧‍👦💕"
 ]
 
-# Configuración de APIs externas
 EXTERNAL_APIS = {
     "google_maps": {
         "base_url": "https://maps.googleapis.com/maps/api",
@@ -256,10 +246,9 @@ EXTERNAL_APIS = {
     }
 }
 
-# Configuración de caché
 CACHE_CONFIG = {
-    "activities_ttl": 3600,      # 1 hora
-    "restaurants_ttl": 1800,     # 30 minutos
-    "weather_ttl": 900,          # 15 minutos
-    "transport_ttl": 300         # 5 minutos
+    "activities_ttl": 3600,      
+    "restaurants_ttl": 1800,     
+    "weather_ttl": 900,          
+    "transport_ttl": 300         
 }

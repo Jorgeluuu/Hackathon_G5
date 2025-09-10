@@ -1,6 +1,5 @@
 
 :root {
-  /* Colores principales */
   --primary-color: #8B4513;
   --secondary-color: #DEB887;
   --accent-color: #FFD700;
@@ -10,41 +9,33 @@
   --info-color: #87CEEB;
   --white-color:#F5F5DC
   
-  /* Colores de fondo */
   --bg-primary: #FFF8DC;
   --bg-secondary: #F5F5DC;
   --bg-dark: #8B4513;
   --bg-card: #FFFFFF;
   
-  /* Colores de texto */
   --text-primary: #2F4F4F;
   --text-secondary: #696969;
   --text-light: #FFFFFF;
   --text-muted: #A9A9A9;
   
-  /* Sombras */
   --shadow-soft: 0 4px 15px rgba(139, 69, 19, 0.1);
   --shadow-medium: 0 8px 25px rgba(139, 69, 19, 0.15);
   --shadow-strong: 0 15px 35px rgba(139, 69, 19, 0.2);
   
-  /* Bordes */
   --border-radius: 15px;
   --border-radius-small: 8px;
   --border-radius-large: 25px;
   
-  /* Transiciones */
   --transition-fast: 0.2s ease;
   --transition-medium: 0.3s ease;
   --transition-slow: 0.5s ease;
   
-  /* Fuentes */
   --font-primary: 'Poppins', sans-serif;
   --font-title: 'Fredoka One', cursive;
 }
 
-/* =============================================================================
-   RESET Y BASE
-============================================================================= */
+/*RESET Y BASE*/
 * {
   box-sizing: border-box;
 }
