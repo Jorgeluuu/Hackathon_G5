@@ -18,13 +18,6 @@ def create_header():
                         html.Span("Ratoncito Pérez", className="brand-highlight")
                     ], className="navbar-title")
                 ], href="/", className="navbar-brand-custom"),
-                
-                # Navegación
-                dbc.Nav([
-                    dbc.NavItem(dbc.NavLink("🏠 Inicio", href="#", className="nav-link-custom")),
-                    dbc.NavItem(dbc.NavLink("🗺️ Mis Planes", href="#", className="nav-link-custom")),
-                    dbc.NavItem(dbc.NavLink("💫 Sobre Nosotros", href="#", className="nav-link-custom"))
-                ], navbar=True, className="nav-custom")
             ], fluid=True)
         ], color="light", className="magical-navbar"),
         
