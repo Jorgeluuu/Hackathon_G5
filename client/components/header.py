@@ -46,22 +46,6 @@ def create_header():
                                 "especialmente para tu familia. ¡Deja que te guíe en una ",
                                 "aventura inolvidable! 🐭🎪"
                             ], className="hero-description"),
-                            
-                            # Características destacadas
-                            html.Div([
-                                html.Span([
-                                    html.I(className="fas fa-star"),
-                                    " Itinerarios personalizados"
-                                ], className="feature-badge"),
-                                html.Span([
-                                    html.I(className="fas fa-map-marker-alt"),
-                                    " Lugares mágicos"
-                                ], className="feature-badge"),
-                                html.Span([
-                                    html.I(className="fas fa-heart"),
-                                    " Experiencias familiares"
-                                ], className="feature-badge")
-                            ], className="features-container")
                         ], className="hero-content")
                     ], width=12)
                 ])

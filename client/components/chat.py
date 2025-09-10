@@ -46,34 +46,7 @@ def create_chat_input():
             className="send-button magical-button")
         ], className="chat-input-group"),
         
-        # Sugerencias de preguntas
-        create_suggested_questions()
-        
     ], className="chat-input-section")
-
-
-def create_suggested_questions():
-    """Crear botones con preguntas sugeridas"""
-    return html.Div([
-        html.Small("💡 Preguntas frecuentes:", className="suggestions-label"),
-        html.Div([
-            dbc.Button("¿Qué llevar en la maleta?", 
-                      size="sm", color="outline-primary", 
-                      className="suggestion-btn"),
-            dbc.Button("¿Cómo llegar desde el aeropuerto?", 
-                      size="sm", color="outline-primary", 
-                      className="suggestion-btn"),
-            dbc.Button("¿Opciones para días lluviosos?", 
-                      size="sm", color="outline-primary", 
-                      className="suggestion-btn"),
-            dbc.Button("¿Descuentos para familias?", 
-                      size="sm", color="outline-primary", 
-                      className="suggestion-btn"),
-            dbc.Button("¿Alternativas gratuitas?", 
-                      size="sm", color="outline-primary", 
-                      className="suggestion-btn")
-        ], className="suggestions-container")
-    ], className="chat-suggestions")
 
 
 def create_chat_message(message_data, sender_type="user"):
