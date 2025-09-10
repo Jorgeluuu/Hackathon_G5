@@ -1,25 +1,26 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routes import generation_routes
 
-app = FastAPI(
-    title="Planificador Mágico API",
-    description="API para agentes IA del Ratoncito Pérez",
-    version="1.0.0"
-)
+from server.routes.itinerary_routes import router as itinerary_router
+from server.routes.chat_routes import router as chat_router
+from server.routes.recommendations_routes import router as recommendations_router
 
-# CORS para frontend (Dash)
+app = FastAPI(title="Magic Planner API - Ratoncito Pérez")
+
+# CORS (ajústalo según tu front)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=["*"],  
     allow_credentials=True,
-     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Incluir routers
-app.include_router(generation_routes.router, tags=["Generation"])
+# rutasss
+app.include_router(itinerary_router, prefix="/api/v1/itinerary", tags=["Itinerary"])
+app.include_router(chat_router, prefix="/api/v1/chat", tags=["Chat"])
+app.include_router(recommendations_router, prefix="/api/v1/recommendations", tags=["Recommendations"])
 
-@app.get("/")
-def root():
-    return {"status": "ok", "message": "Planificador Mágico API running"}
+@app.get("/health")
+async def health_check():
+    return {"status": "ok"}
