@@ -1,8 +1,3 @@
-"""
-Constantes y configuraciones para la aplicación del Ratoncito Pérez
-"""
-
-# Colores del tema mágico
 COLORS = {
     # Colores principales
     "primary": "#8B4513",      # Marrón ratón

@@ -1,7 +1,3 @@
-"""
-Componentes de formularios para la planificación mágica
-"""
-
 from dash import html, dcc
 import dash_bootstrap_components as dbc
 from datetime import datetime, date, timedelta

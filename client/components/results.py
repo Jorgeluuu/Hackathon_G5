@@ -1,7 +1,3 @@
-"""
-Componentes para mostrar los resultados del itinerario
-"""
-
 from dash import html
 import dash_bootstrap_components as dbc
 

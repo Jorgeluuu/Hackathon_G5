@@ -1,8 +1,3 @@
-"""
-El Planificador Mágico del Ratoncito Pérez
-Aplicación principal con Dash
-"""
-
 import dash
 from dash import html, dcc, Input, Output, State, callback
 import dash_bootstrap_components as dbc
@@ -10,7 +5,6 @@ from datetime import datetime, date
 import requests
 import json
 
-# Importar módulos locales
 from components.header import create_header
 from components.forms import create_planning_form
 from components.results import create_results_section
@@ -18,7 +12,6 @@ from components.chat import create_chat_section
 from utils.api_client import FastAPIClient
 from utils.constants import COLORS, MESSAGES
 
-# Inicializar la aplicación
 app = dash.Dash(
     __name__,
     external_stylesheets=[

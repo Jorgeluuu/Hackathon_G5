@@ -1,7 +1,3 @@
-"""
-Cliente para conectar con la API FastAPI del backend
-"""
-
 import requests
 import logging
 from typing import Dict, Any, Optional

@@ -1,8 +1,4 @@
-/* Estilos mágicos para el Planificador del Ratoncito Pérez */
 
-/* =============================================================================
-   VARIABLES CSS Y COLORES
-============================================================================= */
 :root {
   /* Colores principales */
   --primary-color: #8B4513;
@@ -12,6 +8,7 @@
   --warning-color: #FFA500;
   --danger-color: #DC143C;
   --info-color: #87CEEB;
+  --white-color:#F5F5DC
   
   /* Colores de fondo */
   --bg-primary: #FFF8DC;
@@ -61,9 +58,7 @@ body {
   min-height: 100vh;
 }
 
-/* =============================================================================
-   LAYOUT PRINCIPAL
-============================================================================= */
+/*LAYOUT PRINCIPAL*/
 .main-container {
   min-height: 100vh;
   position: relative;
@@ -80,9 +75,7 @@ body {
   margin-top: 2rem;
 }
 
-/* =============================================================================
-   HEADER Y NAVEGACIÓN
-============================================================================= */
+/*HEADER Y NAVEGACIÓN*/
 .magical-navbar {
   background: linear-gradient(90deg, var(--bg-card) 0%, var(--bg-secondary) 100%) !important;
   box-shadow: var(--shadow-medium);
@@ -135,9 +128,7 @@ body {
   width: 80%;
 }
 
-/* =============================================================================
-   HERO SECTION
-============================================================================= */
+/*HERO SECTION*/
 .hero-section {
   background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
   padding: 4rem 0;
@@ -212,9 +203,7 @@ body {
   box-shadow: var(--shadow-medium);
 }
 
-/* =============================================================================
-   ELEMENTOS FLOTANTES DECORATIVOS
-============================================================================= */
+/*ELEMENTOS FLOTANTES DECORATIVOS*/
 .decorative-elements {
   position: fixed;
   top: 0;
@@ -247,9 +236,7 @@ body {
 .element-2 { top: 70%; left: 5%; animation-delay: 5s; }
 .element-3 { top: 10%; right: 40%; animation-delay: 1.5s; }
 
-/* =============================================================================
-   TARJETAS MÁGICAS
-============================================================================= */
+/*TARJETAS MÁGICAS*/
 .magical-card {
   background: var(--bg-card);
   border: none;
@@ -280,9 +267,7 @@ body {
   left: 100%;
 }
 
-/* =============================================================================
-   FORMULARIOS
-============================================================================= */
+/*FORMULARIOS*/
 .planning-form {
   position: sticky;
   top: 2rem;
@@ -347,9 +332,7 @@ body {
   margin: 1.5rem 0;
 }
 
-/* =============================================================================
-   ELEMENTOS DE FORMULARIO PERSONALIZADOS
-============================================================================= */
+/*ELEMENTOS DE FORMULARIO PERSONALIZADOS*/
 .magical-select {
   border: 2px solid var(--secondary-color);
   border-radius: var(--border-radius-small);
@@ -436,9 +419,7 @@ body {
   color: var(--primary-color);
 }
 
-/* =============================================================================
-   BOTONES MÁGICOS
-============================================================================= */
+/*BOTONES MÁGICOS*/
 .magical-button {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   border: none;
@@ -500,9 +481,7 @@ body {
   font-style: italic;
 }
 
-/* =============================================================================
-   ÁREA DE CARGA
-============================================================================= */
+/*ÁREA DE CARGA*/
 .loading-container {
   text-align: center;
   padding: 2rem;
@@ -522,9 +501,7 @@ body {
   animation: pulse 2s ease-in-out infinite;
 }
 
-/* =============================================================================
-   SECCIÓN DE RESULTADOS
-============================================================================= */
+/*SECCIÓN DE RESULTADOS*/
 .results-section {
   background: var(--bg-card);
   border-radius: var(--border-radius);
@@ -550,9 +527,7 @@ body {
   min-height: 300px;
 }
 
-/* =============================================================================
-   PLACEHOLDER Y CONTENIDO INICIAL
-============================================================================= */
+/*PLACEHOLDER Y CONTENIDO INICIAL*/
 .placeholder-card {
   text-align: center;
   padding: 3rem 2rem;
@@ -616,9 +591,7 @@ body {
   color: var(--text-primary);
 }
 
-/* =============================================================================
-   TARJETAS DE DÍAS DEL ITINERARIO
-============================================================================= */
+/*TARJETAS DE DÍAS DEL ITINERARIO*/
 .itinerary-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -665,9 +638,7 @@ body {
   font-style: italic;
 }
 
-/* =============================================================================
-   TIMELINE DE ACTIVIDADES
-============================================================================= */
+/*TIMELINE DE ACTIVIDADES*/
 .timeline-section {
   margin-bottom: 2rem;
 }
@@ -787,9 +758,7 @@ body {
 .price-tag { border-left: 3px solid var(--success-color); }
 .duration-tag { border-left: 3px solid var(--warning-color); }
 
-/* =============================================================================
-   SECCIÓN DE RESTAURANTES
-============================================================================= */
+/*SECCIÓN DE RESTAURANTES*/
 .restaurants-section {
   margin-bottom: 2rem;
 }
@@ -855,9 +824,7 @@ body {
   font-weight: 600;
 }
 
-/* =============================================================================
-   CONSEJOS MÁGICOS
-============================================================================= */
+/*CONSEJOS MÁGICOS*/
 .magical-tip {
   border: none !important;
   background: linear-gradient(135deg, var(--info-color) 0%, rgba(135, 206, 235, 0.1) 100%) !important;
@@ -909,9 +876,7 @@ body {
   font-style: italic;
 }
 
-/* =============================================================================
-   SECCIÓN DE CHAT
-============================================================================= */
+/*SECCIÓN DE CHAT*/
 .chat-section {
   background: var(--bg-card);
   border-radius: var(--border-radius);
@@ -980,9 +945,7 @@ body {
   padding: 0.75rem 1.5rem;
 }
 
-/* =============================================================================
-   MENSAJES DEL CHAT
-============================================================================= */
+/*MENSAJES DEL CHAT*/
 .message-container {
   margin-bottom: 1rem;
 }
@@ -1075,9 +1038,7 @@ body {
   color: var(--text-muted);
 }
 
-/* =============================================================================
-   SUGERENCIAS DE CHAT
-============================================================================= */
+/*SUGERENCIAS DE CHAT*/
 .chat-suggestions {
   margin-top: 1rem;
 }
@@ -1107,9 +1068,7 @@ body {
   box-shadow: var(--shadow-soft);
 }
 
-/* =============================================================================
-   INDICADORES Y ESTADOS
-============================================================================= */
+/*INDICADORES Y ESTADOS*/
 .welcome-message {
   text-align: center;
   padding: 2rem;
@@ -1190,9 +1149,7 @@ body {
   font-style: italic;
 }
 
-/* =============================================================================
-   FOOTER
-============================================================================= */
+/*FOOTER*/
 .magical-footer {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   color: var(--text-light);
@@ -1214,9 +1171,7 @@ body {
   margin: 3rem 0;
 }
 
-/* =============================================================================
-   ALERTAS MÁGICAS
-============================================================================= */
+/*ALERTAS MÁGICAS*/
 .magical-alert {
   border: none !important;
   border-radius: var(--border-radius) !important;
@@ -1236,9 +1191,7 @@ body {
   background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
 }
 
-/* =============================================================================
-   RESPONSIVE DESIGN
-============================================================================= */
+/*RESPONSIVE DESIGN*/
 @media (max-width: 1200px) {
   .form-column {
     width: 100% !important;
@@ -1332,9 +1285,7 @@ body {
   }
 }
 
-/* =============================================================================
-   ANIMACIONES
-============================================================================= */
+/*ANIMACIONES*/
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
@@ -1383,9 +1334,7 @@ body {
   30% { transform: translateY(-10px); }
 }
 
-/* =============================================================================
-   UTILIDADES
-============================================================================= */
+/*UTILIDADES*/
 .text-magical {
   background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
   -webkit-background-clip: text;
@@ -1405,9 +1354,7 @@ body {
   background: linear-gradient(135deg, var(--accent-color) 0%, var(--secondary-color) 100%);
 }
 
-/* =============================================================================
-   SCROLLBAR PERSONALIZADO
-============================================================================= */
+/*SCROLLBAR PERSONALIZADO*/
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -1426,9 +1373,7 @@ body {
   background: linear-gradient(135deg, var(--accent-color), var(--primary-color));
 }
 
-/* =============================================================================
-   ESTADOS DE FOCUS ACCESIBLES
-============================================================================= */
+/*ESTADOS DE FOCUS ACCESIBLES*/
 button:focus,
 input:focus,
 select:focus,
@@ -1437,9 +1382,7 @@ textarea:focus {
   outline-offset: 2px;
 }
 
-/* =============================================================================
-   EFECTOS ESPECIALES
-============================================================================= */
+/*EFECTOS ESPECIALES*/
 .sparkle-effect {
   position: relative;
   overflow: hidden;
@@ -1457,9 +1400,7 @@ textarea:focus {
   pointer-events: none;
 }
 
-/* =============================================================================
-   MODO OSCURO (preparado para futuras implementaciones)
-============================================================================= */
+/*MODO OSCURO (preparado para futuras implementaciones)*/
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-primary: #2F2F2F;

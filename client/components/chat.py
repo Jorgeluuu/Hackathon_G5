@@ -1,7 +1,3 @@
-"""
-Componente de chat con el Ratoncito Pérez
-"""
-
 from dash import html, dcc
 import dash_bootstrap_components as dbc
 
