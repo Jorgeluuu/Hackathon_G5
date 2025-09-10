@@ -16,32 +16,26 @@ def create_planning_form():
         ], className="form-header"),
         
         dbc.CardBody([
-            # Destino
             create_destination_section(),
             
             html.Hr(className="form-divider"),
             
-            # Fechas
             create_dates_section(),
             
             html.Hr(className="form-divider"),
             
-            # Duración y presupuesto
             create_duration_budget_section(),
             
             html.Hr(className="form-divider"),
             
-            # Información familiar
             create_family_section(),
             
             html.Hr(className="form-divider"),
             
-            # Intereses
             create_interests_section(),
             
             html.Hr(className="form-divider"),
             
-            # Botón de generar
             create_generate_button()
         ])
     ], className="planning-form magical-card")

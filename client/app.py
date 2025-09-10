@@ -24,15 +24,12 @@ app = dash.Dash(
 
 app.title = "Planificador Mágico del Ratoncito Pérez"
 
-# Cliente API
 api_client = FastAPIClient()
 
 # Layout principal
 app.layout = dbc.Container([
-    # Header mágico
     create_header(),
     
-    # Contenido principal
     html.Div([
         dbc.Row([
             # Columna izquierda: Formulario de planificación
@@ -49,7 +46,6 @@ app.layout = dbc.Container([
         ], className="main-content")
     ], className="content-wrapper"),
     
-    # Footer
     html.Footer([
         html.P([
             "✨ Hecho con magia por el Ratoncito Pérez ✨",
@@ -140,7 +136,6 @@ def create_itinerary_display(itinerary_data):
     
     components = []
     
-    # Título del itinerario
     components.append(
         html.Div([
             html.H3([
@@ -153,13 +148,11 @@ def create_itinerary_display(itinerary_data):
         ], className="itinerary-header")
     )
     
-    # Días del itinerario
     if 'days' in itinerary_data:
         for i, day in enumerate(itinerary_data['days'], 1):
             day_card = create_day_card(i, day)
             components.append(day_card)
     
-    # Información adicional
     if 'recommendations' in itinerary_data:
         recommendations_card = create_recommendations_card(itinerary_data['recommendations'])
         components.append(recommendations_card)
@@ -170,11 +163,9 @@ def create_itinerary_display(itinerary_data):
 def create_day_card(day_number, day_data):
     """Crear tarjeta para un día específico del itinerario"""
     
-    # Preparar elementos del cuerpo de la tarjeta
     card_body_elements = [
         html.P(day_data.get('description', ''), className="day-description"),
         
-        # Actividades del día
         html.Div([
             html.H6("🎯 Actividades:", className="section-title"),
             html.Ul([
@@ -188,7 +179,6 @@ def create_day_card(day_number, day_data):
         ], className="activities-section")
     ]
     
-    # Añadir restaurantes si existen
     if day_data.get('restaurants'):
         card_body_elements.append(
             html.Div([
@@ -204,7 +194,6 @@ def create_day_card(day_number, day_data):
             ], className="restaurants-section")
         )
     
-    # Añadir consejo del Ratoncito Pérez si existe
     if day_data.get('tip'):
         card_body_elements.append(
             dbc.Alert([
@@ -279,7 +268,6 @@ def handle_chat(n_clicks, n_submit, message, chat_history, itinerary_data):
     if not (n_clicks or n_submit) or not message:
         return chat_history or [], create_chat_messages(chat_history or []), ""
     
-    # Agregar mensaje del usuario
     new_chat_history = chat_history.copy() if chat_history else []
     new_chat_history.append({
         "sender": "user",
