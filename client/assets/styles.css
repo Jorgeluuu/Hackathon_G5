@@ -335,7 +335,7 @@ body {
 }
 
 .magical-select:focus {
-  border-color: var(--primary-color);
+  border-color: var(--white-color);
   box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
   outline: none;
 }
@@ -354,13 +354,17 @@ body {
 }
 
 .magical-slider .rc-slider-track {
-  background: var(--primary-color);
+  background: var(--bg-v);
 }
 
 .magical-slider .rc-slider-handle {
   border: 2px solid var(--primary-color);
   background: var(--accent-color);
   box-shadow: var(--shadow-soft);
+}
+
+.magical-slider .rc-slider-mark-text {
+  color: var(--text-light);
 }
 
 .magical-slider .rc-slider-handle:hover {
@@ -504,7 +508,7 @@ body {
 
 .results-title {
   font-family: var(--font-title);
-  color: var(--primary-color);
+  color: var(--white-color);
   text-align: center;
   margin-bottom: 2rem;
 }
@@ -595,7 +599,7 @@ body {
 
 .itinerary-title {
   font-family: var(--font-title);
-  color: var(--primary-color);
+  color: var(--white-color);
   margin: 0;
   font-size: 2.5rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -636,7 +640,7 @@ body {
 }
 
 .section-title {
-  color: var(--primary-color);
+  color: var(--text-light);
   font-weight: 600;
   margin-bottom: 1rem;
   font-size: 1.1rem;

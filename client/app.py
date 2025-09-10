@@ -50,7 +50,7 @@ app.layout = dbc.Container([
         html.P([
             "✨ Hecho con magia por el Ratoncito Pérez ✨",
             html.Br(),
-            "Madrid, España 2024"
+            "Madrid, España 2025"
         ], className="footer-text")
     ], className="magical-footer"),
     
