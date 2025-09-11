@@ -1,3 +1,5 @@
+#conexion a supabase o firebase
+
 import os
 from supabase import create_client, Client
 from dotenv import load_dotenv
@@ -9,7 +11,13 @@ load_dotenv()
 SUPABASE_URL = os.environ.get("SUPABASE_URL", "")
 SUPABASE_SERVICE_KEY = os.environ.get("SUPABASE_SERVICE_KEY", "")
 
-# Crear el cliente de Supabase
+def init_db():
+    """
+    Inicializa la conexión a la base de datos.
+    Aquí es donde deberías añadir tu lógica para conectar con Supabase o Firebase.
+    """
+    print("Inicializando la conexión a la base de datos...")
+    # Crear el cliente de Supabase
 # Se usa un if para asegurar que las variables no están vacías
 if SUPABASE_URL and SUPABASE_SERVICE_KEY:
     supabase: Client = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
@@ -23,3 +31,7 @@ def test_connection():
         print("Conexión a Supabase establecida correctamente.")
     else:
         print("Fallo en la conexión a Supabase.")
+
+  
+
+
