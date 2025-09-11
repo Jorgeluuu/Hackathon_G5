@@ -327,6 +327,7 @@ body {
 
 /*ELEMENTOS DE FORMULARIO PERSONALIZADOS*/
 .magical-select {
+  color: var(--text-muted);
   border: 2px solid var(--secondary-color);
   border-radius: var(--border-radius-small);
   padding: 0.75rem;
@@ -339,6 +340,16 @@ body {
   border-color: var(--white-color);
   box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
   outline: none;
+}
+
+.magical-select:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-1px);
+}
+
+.magical-select::placeholder {
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 .magical-date-picker input {
@@ -376,16 +387,30 @@ body {
   border: 2px solid var(--secondary-color);
   border-radius: var(--border-radius-small);
   padding: 0.75rem;
+  font-size: 1rem;
+  transition: var(--transition-medium);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-family: var(--font-primary);
+  width: 100%;
   resize: vertical;
   min-height: 80px;
-  transition: var(--transition-medium);
-  font-family: var(--font-primary);
 }
 
 .magical-textarea:focus {
   border-color: var(--primary-color);
   box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
   outline: none;
+}
+
+.magical-textarea:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-1px);
+}
+
+.magical-textarea::placeholder {
+  color: var(--text-muted);
+  font-style: italic;
 }
 
 .magical-checklist {
