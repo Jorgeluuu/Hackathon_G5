@@ -1408,3 +1408,376 @@ textarea:focus {
     --text-muted: #999999;
   }
 }
+
+/* ========================================================================== */
+/* ESTILOS ESPECÍFICOS PARA EL ITINERARIO MEJORADO */
+/* ========================================================================== */
+
+/* HEADER DEL ITINERARIO MEJORADO */
+.itinerary-header {
+  background: linear-gradient(135deg, var(--bg-v) 0%, var(--secondary-color) 150%) !important;
+  padding: 2.5rem !important;
+  border-radius: var(--border-radius-large) !important;
+  box-shadow: var(--shadow-strong) !important;
+  text-align: center;
+  margin-bottom: 3rem;
+  border: 3px solid var(--accent-color);
+  position: relative;
+  overflow: hidden;
+}
+
+.itinerary-header::before {
+  content: '✨';
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  font-size: 4rem;
+  opacity: 0.1;
+  animation: sparkle 3s ease-in-out infinite;
+}
+
+.itinerary-title {
+  font-family: var(--font-title);
+  color: var(--white-color) !important;
+  font-size: 2.8rem !important;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: fadeInUp 1s ease;
+}
+
+.itinerary-subtitle {
+  color: var(--accent-color) !important;
+  font-size: 1.3rem !important;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease 0.3s both;
+}
+
+/* TARJETAS DE DÍA MEJORADAS */
+.day-card {
+  margin-bottom: 2.5rem;
+  border: none !important;
+  border-radius: var(--border-radius-large) !important;
+  box-shadow: var(--shadow-medium) !important;
+  transition: all 0.4s ease;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
+}
+
+.day-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-strong) !important;
+}
+
+.day-header {
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--bg-v) 100%) !important;
+  padding: 1.8rem !important;
+  border-bottom: 3px solid var(--accent-color) !important;
+  text-align: center;
+}
+
+.day-title {
+  font-family: var(--font-title);
+  color: var(--white-color) !important;
+  font-size: 1.8rem !important;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* SECCIONES DENTRO DE LAS TARJETAS */
+.activities-section, .restaurants-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--accent-color);
+}
+
+.section-title {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA500 50%, #FFD700 100%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  background-clip: text !important;
+  font-family: var(--font-title);
+  font-size: 1.4rem !important;
+  margin-bottom: 1.5rem !important;
+  border-bottom: 2px solid #FFA500;
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: goldenShine 3s ease-in-out infinite;
+}
+
+
+
+/* LISTA DE ACTIVIDADES MEJORADA */
+.activities-list, .restaurants-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.activities-list li, .restaurants-list li {
+  background: var(--bg-secondary);
+  margin-bottom: 1rem;
+  padding: 1.2rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--info-color);
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-soft);
+}
+
+.activities-list li:hover, .restaurants-list li:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-medium);
+  border-left-color: var(--accent-color);
+}
+
+.activities-list li:nth-child(2n) {
+  border-left-color: var(--success-color);
+}
+
+.activities-list li:nth-child(3n) {
+  border-left-color: var(--warning-color);
+}
+
+/* TEXTO DENTRO DE LAS ACTIVIDADES */
+.activity-description {
+  color: var(--text-primary) !important;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+.restaurant-address {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* CONSEJO MÁGICO MEJORADO */
+.magical-tip {
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, rgba(139, 69, 19, 0.1) 100%) !important;
+  border: 2px dashed var(--accent-color) !important;
+  border-radius: var(--border-radius-large) !important;
+  padding: 1.8rem !important;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.magical-tip::before {
+  content: '🐭';
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  font-size: 2.5rem;
+  opacity: 0.8;
+  animation: bounce 2s infinite;
+}
+
+.tip-icon {
+  width: 50px !important;
+  height: 50px !important;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.tip-content strong {
+  color: var(--primary-color) !important;
+  font-size: 1.2rem !important;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+
+.tip-text {
+  color: var(--text-primary) !important;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0;
+  font-style: italic;
+}
+
+/* RECOMENDACIONES MEJORADAS */
+.recommendations-card {
+  margin-top: 3rem;
+  border: 2px solid var(--accent-color) !important;
+  border-radius: var(--border-radius-large) !important;
+}
+
+.hotels-list li, .tips-list li {
+  background: var(--bg-secondary);
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  border-radius: var(--border-radius);
+  border-left: 3px solid var(--success-color);
+  transition: all 0.3s ease;
+}
+
+.hotels-list li:hover, .tips-list li:hover {
+  transform: translateX(3px);
+  background: var(--bg-card);
+}
+
+.transport-info {
+  background: var(--bg-secondary);
+  padding: 1.2rem;
+  border-radius: var(--border-radius);
+  border-left: 3px solid var(--info-color);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* BADGES PARA INFORMACIÓN */
+.info-badge {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--border-radius-large);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+
+.badge-time {
+  background: var(--info-color);
+  color: var(--text-light);
+}
+
+.badge-location {
+  background: var(--success-color);
+  color: var(--text-light);
+}
+
+.badge-price {
+  background: var(--warning-color);
+  color: var(--text-light);
+}
+
+/* ANIMACIONES ESPECÍFICAS */
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.day-card {
+  animation: slideInFromRight 0.6s ease;
+}
+
+.day-card:nth-child(1) { animation-delay: 0.1s; }
+.day-card:nth-child(2) { animation-delay: 0.2s; }
+.day-card:nth-child(3) { animation-delay: 0.3s; }
+.day-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* RESPONSIVE PARA ITINERARIO */
+@media (max-width: 768px) {
+  .itinerary-title {
+    font-size: 2rem !important;
+  }
+  
+  .itinerary-subtitle {
+    font-size: 1.1rem !important;
+  }
+  
+  .day-title {
+    font-size: 1.4rem !important;
+  }
+  
+  .section-title {
+    font-size: 1.2rem !important;
+  }
+  
+  .activities-list li, .restaurants-list li {
+    padding: 1rem;
+  }
+  
+  .magical-tip {
+    padding: 1.2rem !important;
+  }
+}
+
+/* ESTILOS PARA TEXTO DESTACADO */
+.highlight {
+  background: linear-gradient(120deg, var(--accent-color) 0%, transparent 100%);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--border-radius-small);
+  font-weight: 600;
+}
+
+/* EFECTO DE BRÚJULA MÁGICA */
+.compass-effect {
+  position: relative;
+}
+
+.compass-effect::after {
+  content: '🧭';
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 2rem;
+  opacity: 0.7;
+  animation: spin 4s linear infinite;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* MEJORAS PARA LA ESTRUCTURA DEL TEXTO */
+.day-description {
+  font-size: 1.1rem !important;
+  line-height: 1.7;
+  color: var(--text-primary) !important;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--primary-color);
+}
+
+/* GRADIENTES ESPECIALES PARA DIFERENTES DÍAS */
+.day-card:nth-child(1) .day-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+.day-card:nth-child(2) .day-header {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%) !important;
+}
+
+.day-card:nth-child(3) .day-header {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+}
+
+.day-card:nth-child(4) .day-header {
+  background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%) !important;
+}
+
+.day-card:nth-child(5) .day-header {
+  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%) !important;
+}
+
+/* INDICADOR DE PROGRESO DEL DÍA */
+.day-progress {
+  height: 4px;
+  background: var(--bg-secondary);
+  border-radius: var(--border-radius-large);
+  margin: 1rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.day-progress::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-color), var(--primary-color));
+  animation: progressFill 2s ease-in-out;
+}
+
+@keyframes progressFill {
+  from { width: 0%; }
+  to { width: 100%; }
+}

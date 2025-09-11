@@ -1,19 +1,22 @@
 from pydantic import BaseModel, Field
-from typing import Optional, List
+from typing import Optional, List, Dict, Any
 
 class ItineraryRequest(BaseModel):
-    duration: int = Field(..., description="Duración de la estancia en días.")
-    kids_age: str = Field(..., description="Edades de los niños (ej. '5, 8, 12').")
-    budget: str = Field(..., description="Presupuesto (ej. 'bajo', 'medio', 'alto').")
-    interests: Optional[str] = Field(None, description="Intereses especiales (ej. 'museos', 'parques').")
+    destination: str = Field(..., description="Destino del itinerario.")
+    duration_days: int = Field(..., description="Duración en días.")
+    budget_range: str = Field(..., description="Rango de presupuesto (bajo, medio, alto).")
+    children_ages: Optional[List[int]] = Field([], description="Edades de los niños.")
+    interests: Optional[List[str]] = Field([], description="Lista de intereses.")
+    family_size: Optional[int] = Field(2, description="Tamaño de la familia (adultos + niños).")
 
 class ItineraryResponse(BaseModel):
-    itinerary: str = Field(..., description="El itinerario mágico generado por el Ratoncito Pérez.")
+    itinerary: Dict[str, Any] = Field(..., description="Itinerario mágico generado.")
+
 
 class ChatRequest(BaseModel):
     message: str = Field(..., description="Mensaje del usuario en el chat.")
-    conversation_history: Optional[List[dict]] = Field(None, description="Historial de la conversación.")
-    user_preferences: Optional[ItineraryRequest] = Field(None, description="Preferencias iniciales o actualizadas del usuario.")
+    conversation_history: Optional[List[dict]] = Field([], description="Historial de la conversación.")
+    user_preferences: Optional[Dict[str, Any]] = Field(None, description="Preferencias del usuario.")  # Cambiado a Dict
 
     class Config:
         json_schema_extra = {
@@ -21,15 +24,17 @@ class ChatRequest(BaseModel):
                 "message": "¿Puedes ayudarme a planificar un día en Madrid?",
                 "conversation_history": [],
                 "user_preferences": {
-                    "duration": 1,
-                    "kids_age": "5, 8",
-                    "budget": "medio",
-                    "interests": "museos, parques, comida local"
+                    "destination": "Madrid",
+                    "duration_days": 3,
+                    "budget_range": "medio",
+                    "children_ages": [5, 8],
+                    "interests": ["museos", "parques"],
+                    "family_size": 4
                 }
             }
         }
 
 class ChatResponse(BaseModel):
     response: str = Field(..., description="Respuesta del agente en el chat.")
-    conversation_history: Optional[List[dict]] = Field(None, description="Historial actualizado de la conversación.")
-    user_preferences: Optional[ItineraryRequest] = Field(None, description="Preferencias actuales del usuario en la conversación.")
+    conversation_history: Optional[List[dict]] = Field([], description="Historial actualizado de la conversación.")
+    user_preferences: Optional[Dict[str, Any]] = Field(None, description="Preferencias actuales del usuario.")  # Cambiado a Dict

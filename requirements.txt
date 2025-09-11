@@ -18,6 +18,7 @@ google-cloud-storage==3.3.1
 google-crc32c==1.7.1
 google-resumable-media==2.7.2
 googleapis-common-protos==1.70.0
+groq==0.31.1
 grpcio==1.74.0
 grpcio-status==1.74.0
 h11==0.16.0

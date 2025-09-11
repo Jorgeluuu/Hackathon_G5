@@ -22,7 +22,7 @@ app = dash.Dash(
     assets_folder='assets'
 )
 
-app.title = "Planificador Mágico del Ratoncito Pérez"
+app.title = "Brújula Mágica - Planificador mágico del Ratoncito Pérez"
 
 api_client = FastAPIClient()
 
@@ -89,13 +89,17 @@ def generate_itinerary(n_clicks, destination, duration, budget, children_ages, i
     try:
         # Preparar datos para la API
         planning_data = {
-            "destination": destination,
-            "duration_days": duration,
-            "budget_range": budget,
-            "children_ages": children_ages if children_ages else [],
-            "interests": interests if interests else [],
-            "family_size": len(children_ages) + 2 if children_ages else 2
+        "destination": str(destination),
+        "duration_days": int(duration),
+        "budget_range": str(budget).lower(),  # siempre string
+        "children_ages": (
+            [int(children_ages)] if isinstance(children_ages, str) else
+            [int(age) for age in children_ages] if children_ages else []
+        ),
+        "interests": interests if isinstance(interests, list) else [interests],
+        "family_size": (len(children_ages) if isinstance(children_ages, list) else 1) + 2
         }
+
         
         # Llamada a la API
         itinerary = api_client.generate_itinerary(planning_data)
@@ -123,18 +127,31 @@ def create_itinerary_display(itinerary_data):
     if not itinerary_data:
         return []
     
+    # Si hay un error en la respuesta
+    if isinstance(itinerary_data, dict) and "error" in itinerary_data:
+        return dbc.Alert([
+            html.H5("❌ Error en el itinerario"),
+            html.P(itinerary_data["error"])
+        ], color="danger")
+    
     components = []
     
     components.append(
         html.Div([
             html.H3([
-                "🎪 Tu Aventura Mágica en Madrid 🎪"
-            ], className="itinerary-title"),
+                html.Span("🎪 ", style={"color": "#FF6B6B"}),
+                f"Tu Aventura Mágica en {itinerary_data.get('destination', 'Madrid')}",
+                html.Span(" 🎪", style={"color": "#FF6B6B"})
+            ], className="itinerary-title", 
+               style={"color": "#2C3E50", "textAlign": "center", "marginBottom": "10px"}),
             html.P(
-                f"✨ Planificado especialmente para tu familia por el Ratoncito Pérez ✨",
-                className="itinerary-subtitle"
+                "✨ Planificado especialmente para tu familia por el Ratoncito Pérez ✨",
+                className="itinerary-subtitle",
+                style={"textAlign": "center", "color": "#7F8C8D", "fontSize": "16px", "marginBottom": "30px"}
             )
-        ], className="itinerary-header")
+        ], className="itinerary-header", 
+           style={"backgroundColor": "#FFFDE7", "padding": "20px", "borderRadius": "10px", "marginBottom": "30px",
+                  "border": "2px dashed #FFD700"})
     )
     
     if 'days' in itinerary_data:
@@ -153,44 +170,89 @@ def create_day_card(day_number, day_data):
     """Crear tarjeta para un día específico del itinerario"""
     
     card_body_elements = [
-        html.P(day_data.get('description', ''), className="day-description"),
+        html.P(day_data.get('description', 'Descripción del día mágico'),
+               className="day-description"),
         
-        html.Div([
-            html.H6("🎯 Actividades:", className="section-title"),
-            html.Ul([
-                html.Li([
-                    html.Strong(f"{activity.get('time', '')}: "),
-                    activity.get('name', ''),
-                    html.Br(),
-                    html.Small(activity.get('description', ''), className="activity-description")
-                ]) for activity in day_data.get('activities', [])
-            ], className="activities-list")
-        ], className="activities-section")
+        # Barra de progreso decorativa
+        html.Div(className="day-progress"),
     ]
     
-    if day_data.get('restaurants'):
+    # Actividades
+    activities = day_data.get('activities', [])
+    if activities:
+        activities_list = []
+        for activity in activities:
+            activities_list.append(
+                html.Li([
+                    html.Div([
+                        html.Span([
+                            html.Span("⏰ ", style={"color": "#FF6B6B"}),
+                            html.Strong(f"{activity.get('time', 'Horario:')}"),
+                            html.Span(" • ", style={"color": "#BDC3C7"}),
+                            html.Span("📍 ", style={"color": "#3498DB"}),
+                            activity.get('location', 'Madrid')
+                        ], className="info-badge badge-time"),
+                        html.Br(),
+                        html.Strong(f"🎯 {activity.get('name', 'Actividad')}", 
+                                  style={"color": "#D7DADE", "fontSize": "16px"}),
+                        html.Br(),
+                        html.Span(activity.get('description', ''), 
+                                className="activity-description"),
+                    ])
+                ])
+            )
+        
+        card_body_elements.append(
+            html.Div([
+                html.H6("🎯 Actividades del día:", className="section-title"),
+                html.Ul(activities_list, className="activities-list")
+            ], className="activities-section")
+        )
+    
+    # Restaurantes
+    restaurants = day_data.get('restaurants', [])
+    if restaurants:
+        restaurants_list = []
+        for restaurant in restaurants:
+            restaurants_list.append(
+                html.Li([
+                    html.Div([
+                        html.Strong(f"🍽️ {restaurant.get('name', 'Restaurante')}", 
+                                  style={"color": "#E67E22"}),
+                        html.Br(),
+                        html.Span(f"🍳 {restaurant.get('cuisine', 'Cocina local')}"),
+                        html.Br(),
+                        html.Small(f"📍 {restaurant.get('address', 'Madrid')}", 
+                                 className="restaurant-address"),
+                        html.Br(),
+                        html.Span([
+                            html.Span(f"⭐ {restaurant.get('rating', '4.0')}"),
+                            html.Span(" • "),
+                            html.Span(f"💰 {restaurant.get('price_range', '€€')}")
+                        ], style={"color": "#7F8C8D", "fontSize": "14px"})
+                    ])
+                ])
+            )
+        
         card_body_elements.append(
             html.Div([
                 html.H6("🍽️ Restaurantes recomendados:", className="section-title"),
-                html.Ul([
-                    html.Li([
-                        html.Strong(restaurant.get('name', '')),
-                        f" - {restaurant.get('cuisine', '')}",
-                        html.Br(),
-                        html.Small(restaurant.get('address', ''), className="restaurant-address")
-                    ]) for restaurant in day_data.get('restaurants', [])
-                ], className="restaurants-list")
+                html.Ul(restaurants_list, className="restaurants-list")
             ], className="restaurants-section")
         )
     
-    if day_data.get('tip'):
+    # Consejo
+    tip = day_data.get('tip')
+    if tip:
         card_body_elements.append(
             dbc.Alert([
                 html.Div([
                     html.Img(src="/assets/Ratoncito.png", className="tip-icon"),
-                    html.Strong("Consejo del Ratoncito Pérez: "),
-                    day_data.get('tip', '')
-                ])
+                    html.Div([
+                        html.Strong("💫 Consejo Mágico del Ratoncito Pérez:"),
+                        html.P(tip, className="tip-text")
+                    ], className="tip-content")
+                ], className="tip-container")
             ], color="info", className="magical-tip")
         )
     
@@ -203,43 +265,57 @@ def create_day_card(day_number, day_data):
         dbc.CardBody(card_body_elements)
     ], className="day-card magical-card")
 
-
 def create_recommendations_card(recommendations):
     """Crear tarjeta con recomendaciones adicionales"""
     return dbc.Card([
         dbc.CardHeader([
-            html.H4("💫 Recomendaciones Adicionales", className="recommendations-title")
-        ]),
+            html.H4("💫 Recomendaciones Adicionales", 
+                   className="recommendations-title",
+                   style={"color": "#2C3E50", "textAlign": "center", "margin": "0"})
+        ], style={"backgroundColor": "#E8F5E9", "padding": "15px", "borderBottom": "2px solid #4CAF50"}),
         dbc.CardBody([
             html.Div([
-                html.H6("🏨 Alojamientos:", className="section-title"),
+                html.H6("🏨 Alojamientos recomendados:", 
+                       className="section-title",
+                       style={"color": "#2C3E50", "borderBottom": "1px solid #4CAF50", "paddingBottom": "5px"}),
                 html.Ul([
                     html.Li([
-                        html.Strong(hotel.get('name', '')),
+                        html.Strong(hotel.get('name', 'Hotel'), 
+                                  style={"color": "#2E86C1"}),
                         f" - ⭐ {hotel.get('rating', 'N/A')}",
                         html.Br(),
-                        html.Small(f"💰 {hotel.get('price_range', '')} | 📍 {hotel.get('location', '')}")
-                    ]) for hotel in recommendations.get('hotels', [])
-                ], className="hotels-list")
-            ], className="hotels-section"),
+                        html.Small(f"💰 {hotel.get('price_range', '')} | 📍 {hotel.get('location', '')}", 
+                                 style={"color": "#7F8C8D"})
+                    ], style={"marginBottom": "10px", "padding": "5px", "backgroundColor": "#F8F9FA", "borderRadius": "5px"}) 
+                    for hotel in recommendations.get('hotels', [])
+                ], className="hotels-list", style={"paddingLeft": "20px"})
+            ], className="hotels-section", style={"marginBottom": "20px"}),
             
-            html.Hr(),
-            
-            html.Div([
-                html.H6("🚌 Transporte:", className="section-title"),
-                html.P(recommendations.get('transport_info', ''), className="transport-info")
-            ], className="transport-section"),
-            
-            html.Hr(),
+            html.Hr(style={"borderColor": "#BDC3C7"}),
             
             html.Div([
-                html.H6("💡 Consejos generales:", className="section-title"),
+                html.H6("🚌 Transporte:", 
+                       className="section-title",
+                       style={"color": "#2C3E50", "borderBottom": "1px solid #3498DB", "paddingBottom": "5px"}),
+                html.P(recommendations.get('transport_info', ''), 
+                      className="transport-info",
+                      style={"fontSize": "15px", "color": "#34495E", "padding": "10px", "backgroundColor": "#EBF5FB", "borderRadius": "5px"})
+            ], className="transport-section", style={"marginBottom": "20px"}),
+            
+            html.Hr(style={"borderColor": "#BDC3C7"}),
+            
+            html.Div([
+                html.H6("💡 Consejos generales:", 
+                       className="section-title",
+                       style={"color": "#2C3E50", "borderBottom": "1px solid #F39C12", "paddingBottom": "5px"}),
                 html.Ul([
-                    html.Li(tip) for tip in recommendations.get('general_tips', [])
-                ], className="tips-list")
+                    html.Li(tip, style={"marginBottom": "8px", "padding": "5px", "backgroundColor": "#FEF9E7", "borderRadius": "5px"}) 
+                    for tip in recommendations.get('general_tips', [])
+                ], className="tips-list", style={"paddingLeft": "20px"})
             ], className="general-tips-section")
-        ])
-    ], className="recommendations-card magical-card")
+        ], style={"padding": "20px"})
+    ], className="recommendations-card magical-card", 
+       style={"marginBottom": "25px", "border": "1px solid #D5F5E3", "borderRadius": "15px", "boxShadow": "0 4px 8px rgba(0,0,0,0.1)"})
 
 
 @app.callback(
