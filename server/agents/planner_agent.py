@@ -1,3 +1,4 @@
+# Importa la función de guardado desde tu controlador
 from server.core.config import get_llm
 from server.prompts.prompt import ITINERARY_PLANNER_PROMPT
 from dotenv import load_dotenv
