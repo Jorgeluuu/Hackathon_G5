@@ -1,38 +1,58 @@
-# Importa el cliente de Supabase que definiste en database.py
 from server.core.database import supabase
 
-def save_itinerary(itinerary_data):
+def save_user_petition(petition_data):
     """
-    Guarda un plan de viaje completo y sus actividades en la base de datos.
+    Guarda la petición estructurada del usuario en la tabla 'user_petitions'.
     """
     if not supabase:
         print("Error: No hay conexión a Supabase.")
         return None
 
     try:
-        # 1. Inserta el viaje principal y obtiene su ID
-        trip_response = supabase.from_('trips').insert({
-            'nombre_viaje': itinerary_data['nombre_viaje'],
-            'fecha_inicio': itinerary_data['fecha_inicio'],
-            'fecha_fin': itinerary_data['fecha_fin']
+        response = supabase.from_('user_petitions').insert({
+            'duration': petition_data.get('duration'),
+            'kids_age': petition_data.get('kids_age'),
+            'budget': petition_data.get('budget'),
+            'interests': petition_data.get('interests')
         }).execute()
+        
+        # Devuelve el ID de la fila recién insertada
+        return response.data[0]['id']
 
-        # El ID del viaje es la clave para conectar las actividades
+    except Exception as e:
+        print(f"Ocurrió un error al guardar la petición del usuario: {e}")
+        return None
+
+def save_itinerary(trip_data, activities_data):
+    """
+    Guarda el plan de viaje final en las tablas 'trips' y 'activities'.
+    """
+    if not supabase:
+        print("Error: No hay conexión a Supabase.")
+        return None
+
+    try:
+        # 1. Guardar la información principal del viaje
+        trip_response = supabase.from_('trips').insert({
+            'nombre_viaje': trip_data.get('nombre_viaje'),
+            'duration': trip_data.get('duration'),
+            'budget': trip_data.get('budget'),
+            'kids_age': trip_data.get('kids_age'),
+            'interests': trip_data.get('interests'),
+            'descripcion_viaje': trip_data.get('descripcion_viaje')
+        }).execute()
+        
         trip_id = trip_response.data[0]['id']
 
-        # 2. Prepara una lista para guardar las actividades
-        activities_to_insert = []
-        for activity in itinerary_data['actividades']:
-            # Añade el 'trip_id' a cada actividad antes de insertarla
+        # 2. Guardar las actividades, enlazándolas al viaje
+        for activity in activities_data:
             activity['trip_id'] = trip_id
-            activities_to_insert.append(activity)
+        
+        supabase.from_('activities').insert(activities_data).execute()
 
-        # 3. Inserta todas las actividades de golpe
-        supabase.from_('activities').insert(activities_to_insert).execute()
-
-        print(f"Plan '{itinerary_data['nombre_viaje']}' guardado con éxito.")
-        return trip_id
+        print("Itinerario guardado con éxito.")
+        return True
 
     except Exception as e:
         print(f"Ocurrió un error al guardar el itinerario: {e}")
-        return None
+        return False
