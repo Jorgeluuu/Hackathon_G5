@@ -52,7 +52,7 @@ class PlannerAgent:
             raise
 
 class BackupAgent:
-    def __init__(self, groq_api_key: str, model: str = "mixtral-8x7b-32768"): # Aseguramos un modelo conocido
+    def __init__(self, groq_api_key: str, model: str = "gemma2-9b-it"): # Aseguramos un modelo conocido
         self.groq_api_key = groq_api_key or os.getenv("GROQ_API_KEY")
         if not self.groq_api_key:
             raise ValueError("GROQ_API_KEY is not set in environment variables or provided.")
