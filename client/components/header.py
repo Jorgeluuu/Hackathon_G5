@@ -14,8 +14,8 @@ def create_header():
                         className="navbar-logo"
                     ),
                     html.Span([
-                        "La Brújula Mágica del ",
-                        html.Span("Ratoncito Pérez", className="brand-highlight")
+                        "Brújula Mágica ",
+                        html.Span("del Ratoncito Pérez", className="brand-highlight")
                     ], className="navbar-title")
                 ], href="/", className="navbar-brand-custom"),
             ], fluid=True)
