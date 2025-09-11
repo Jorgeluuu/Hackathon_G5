@@ -70,22 +70,12 @@ app.layout = dbc.Container([
      State('duration-slider', 'value'),
      State('budget-slider', 'value'),
      State('children-ages', 'value'),
-     State('interests-checklist', 'value'),
-     State('date-picker', 'date')]
+     State('interests-checklist', 'value'),]
 )
-def generate_itinerary(n_clicks, destination, duration, budget, children_ages, interests, travel_date):
+def generate_itinerary(n_clicks, destination, duration, budget, children_ages, interests):
     """Generar itinerario mágico basado en las preferencias del usuario"""
     if not n_clicks:
         return None, [], ""
-    
-    if not destination or not travel_date:
-        return None, [
-            dbc.Alert(
-                "¡Ups! El Ratoncito Pérez necesita saber el destino y la fecha para crear tu aventura mágica 🐭✨",
-                color="warning",
-                className="magical-alert"
-            )
-        ], ""
     
     # Mostrar spinner de carga
     loading_component = dbc.Spinner([
@@ -104,7 +94,6 @@ def generate_itinerary(n_clicks, destination, duration, budget, children_ages, i
             "budget_range": budget,
             "children_ages": children_ages if children_ages else [],
             "interests": interests if interests else [],
-            "travel_date": travel_date,
             "family_size": len(children_ages) + 2 if children_ages else 2
         }
         

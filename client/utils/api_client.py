@@ -26,7 +26,7 @@ class FastAPIClient:
             endpoint = f"{self.base_url}/api/v1/itinerary/generate"
             
             # Validar datos requeridos
-            required_fields = ["destination", "duration_days", "travel_date"]
+            required_fields = ["destination", "duration_days"]
             for field in required_fields:
                 if field not in planning_data or not planning_data[field]:
                     self.logger.error(f"Campo requerido faltante: {field}")
