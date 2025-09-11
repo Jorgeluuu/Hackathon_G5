@@ -1434,15 +1434,3 @@ textarea:focus {
   animation: rotate 10s linear infinite;
   pointer-events: none;
 }
-
-/*MODO OSCURO (preparado para futuras implementaciones)*/
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-primary: #2F2F2F;
-    --bg-secondary: #3F3F3F;
-    --bg-card: #4F4F4F;
-    --text-primary: #FFFFFF;
-    --text-secondary: #CCCCCC;
-    --text-muted: #999999;
-  }
-}
