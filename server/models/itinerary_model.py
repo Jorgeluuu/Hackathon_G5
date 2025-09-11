@@ -1,1 +1,0 @@
-# MODELOS (representación lógica)
