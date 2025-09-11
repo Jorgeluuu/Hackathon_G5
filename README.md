@@ -31,27 +31,29 @@ El Ratoncito Pérez acompaña con curiosidades y tips mágicos sobre cada parada
 
 El proyecto está construido principalmente con Python y un ecosistema moderno de librerías para el desarrollo de aplicaciones web y servicios en tiempo real:
 
-⚡ FastAPI – Framework web rápido y eficiente para construir la API.
+🏃‍♂️💨 **Dash** -  Para crear un frontend interacivo y comprensible para el usuario.
 
-🌐 Uvicorn + Starlette – Servidor ASGI y toolkit ligero para alto rendimiento.
+⚡ **FastAPI** – Framework web rápido y eficiente para construir la API.
 
-🗄️ Supabase – Autenticación, funciones y base de datos en tiempo real.
+🌐 **Uvicorn + Starlette** – Servidor ASGI y toolkit ligero para alto rendimiento.
 
-🔥 Firebase Admin – Manejo de notificaciones, autenticación y servicios de Google.
+🗄️ **Supabase – Autenticación**, funciones y base de datos en tiempo real.
 
-🗂️ Google Cloud (Firestore, Storage, API Core) – Almacenamiento de datos y medios en la nube.
+🔥 **Firebase Admin** – Manejo de notificaciones, autenticación y servicios de Google.
 
-🔒 Cryptography y PyJWT – Seguridad, encriptación y manejo de tokens.
+🗂️ **oogle Cloud** (Firestore, Storage, API Core) – Almacenamiento de datos y medios en la nube.
 
-🔄 HTTPX / Requests – Cliente HTTP moderno y compatible con async.
+🔒 **Cryptography** y **PyJWT** – Seguridad, encriptación y manejo de tokens.
 
-⚙️ Pydantic v2 – Validación y tipado de datos robusto.
+🔄 **HTTPX / Requests** – Cliente HTTP moderno y compatible con async.
 
-📦 CacheControl / CacheTools – Mecanismos de caching para optimizar rendimiento.
+⚙️ **Pydantic v2** – Validación y tipado de datos robusto.
 
-👀 Watchfiles – Recarga automática en desarrollo.
+📦 **CacheControl / CacheTools** – Mecanismos de caching para optimizar rendimiento.
 
-🔗 gRPC – Comunicación eficiente entre servicios.
+👀 **Watchfiles** – Recarga automática en desarrollo.
+
+🔗 **gRPC** – Comunicación eficiente entre servicios.
 
 Con este stack, Brújula Mágica combina APIs rápidas, almacenamiento seguro y servicios en la nube para ofrecer una experiencia cultural interactiva y personalizada.
 
