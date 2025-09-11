@@ -638,6 +638,14 @@ body {
   margin-top: 0.5rem;
 }
 
+.day-title {
+  color: var(--text-light);
+}
+
+.day-description {
+  color: var(--text-light);
+}
+
 .day-card {
   margin-bottom: 2rem;
   overflow: visible;
@@ -659,6 +667,10 @@ body {
   margin: 0.5rem 0 0 0;
   opacity: 0.9;
   font-style: italic;
+}
+
+.recommendations-title {
+  color: var(--text-light);
 }
 
 /*TIMELINE DE ACTIVIDADES*/
