@@ -9,13 +9,13 @@ def create_header():
                 # Logo y título
                 dbc.NavbarBrand([
                     html.Img(
-                        src="assets/tooth-icon.png",
+                        src="assets/Brujula.png",
                         height="50px",
                         className="navbar-logo"
                     ),
                     html.Span([
-                        "El Planificador Mágico del ",
-                        html.Span("Ratoncito Pérez", className="brand-highlight")
+                        "Brújula Mágica ",
+                        html.Span("del Ratoncito Pérez", className="brand-highlight")
                     ], className="navbar-title")
                 ], href="/", className="navbar-brand-custom"),
             ], fluid=True)

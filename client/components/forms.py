@@ -123,8 +123,13 @@ def create_family_section():
             dbc.Textarea(
                 id="children-ages",
                 placeholder="Ejemplo: 5, 8, 12 años",
-                rows=2,
-                className="magical-textarea"
+                rows=1,
+                maxLength=10,
+                className="magical-textarea",
+                style={
+                    'resize': 'none',  
+                    'overflow': 'hidden' 
+                }
             ),
             html.Small(
                 "Esto ayuda al Ratoncito Pérez a personalizar las actividades 🎈",
