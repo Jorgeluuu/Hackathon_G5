@@ -4,6 +4,10 @@ from server.agents.planner_agent import ItineraryPlannerAgent
 from server.agents.chat_agent import ChatAgent
 from server.schemas.itinerary_schema import ItineraryRequest, ItineraryResponse, ChatRequest, ChatResponse
 import logging
+from server.services.database_service import save_user_petition, save_llm_answer, save_trip_output # Importar save_trip_output
+from server.schemas.database_schemas import UserPetition, LLMAnswer, TripOutput # Importar TripOutput
+from datetime import datetime, date # Necesario para las marcas de tiempo y fechas
+import uuid # Necesario para generar IDs
 
 logger = logging.getLogger(__name__)
 
@@ -27,6 +31,24 @@ async def generate_itinerary_controller(request: ItineraryRequest, resource_data
 
     try:
         itinerary_content = planner_agent.generate_itinerary(user_preferences)
+
+        # Guardar el itinerario generado en la tabla trips_output
+        trip_output_data = TripOutput(
+            id=uuid.uuid4(),
+            trip_title=None, # No se genera un título específico en este punto
+            start_date=date.today(), # Usamos la fecha actual como fecha de inicio
+            budget=request.budget,
+            description=itinerary_content,
+            kids_age=request.kids_age,
+            interests=request.interests,
+            duration=request.duration
+        )
+        try:
+            await save_trip_output(trip_output_data)
+            logger.info(f"Itinerario guardado en trips_output con ID: {trip_output_data.id}")
+        except Exception as e:
+            logger.error(f"No se pudo guardar el itinerario en trips_output: {e}")
+
         return ItineraryResponse(itinerary=itinerary_content)
     except Exception as e:
         logger.error(f"Error en el controlador al generar el itinerario: {e}")
@@ -61,6 +83,22 @@ async def chat_with_agent_controller(request: ChatRequest, resource_data: dict) 
         )
         _current_user_preferences["default_user"] = current_preferences
 
+    # Crear y guardar la petición del usuario
+    user_petition_id = uuid.uuid4()
+    user_petition_data = UserPetition(
+        id=user_petition_id,
+        duration=current_preferences.duration,
+        kids_age=current_preferences.kids_age,
+        budget=current_preferences.budget,
+        interests=current_preferences.interests,
+        created_at=datetime.now()
+    )
+    try:
+        await save_user_petition(user_petition_data)
+        logger.info(f"Petición de usuario guardada con ID: {user_petition_id}")
+    except Exception as e:
+        logger.error(f"No se pudo guardar la petición del usuario: {e}")
+
 
     # Añadir el mensaje del usuario al historial
     request.conversation_history.append({"role": "user", "content": request.message})
@@ -78,6 +116,20 @@ async def chat_with_agent_controller(request: ChatRequest, resource_data: dict) 
         )
     except Exception as e:
         logger.error(f"Error al generar la respuesta del chat con el agente: {e}")
+
+    # Crear y guardar la respuesta del LLM
+    llm_answer_data = LLMAnswer(
+        id=uuid.uuid4(),
+        petition=request.message, # La petición original del usuario
+        timestamp_zone=datetime.now(),
+        answer_text=agent_response_content
+    )
+    try:
+        await save_llm_answer(llm_answer_data)
+        logger.info(f"Respuesta del LLM guardada para la petición: {user_petition_id}")
+    except Exception as e:
+        logger.error(f"No se pudo guardar la respuesta del LLM: {e}")
+
 
     # Añadir la respuesta del agente al historial
     request.conversation_history.append({"role": "assistant", "content": agent_response_content})
@@ -114,38 +166,4 @@ def save_user_petition(petition_data):
 
     except Exception as e:
         print(f"Ocurrió un error al guardar la petición del usuario: {e}")
-        return None
-
-def save_itinerary(trip_data, activities_data):
-    """
-    Guarda el plan de viaje final en las tablas 'trips' y 'activities'.
-    """
-    if not supabase:
-        print("Error: No hay conexión a Supabase.")
-        return None
-
-    try:
-        # 1. Guardar la información principal del viaje
-        trip_response = supabase.from_('trips').insert({
-            'nombre_viaje': trip_data.get('nombre_viaje'),
-            'duration': trip_data.get('duration'),
-            'budget': trip_data.get('budget'),
-            'kids_age': trip_data.get('kids_age'),
-            'interests': trip_data.get('interests'),
-            'descripcion_viaje': trip_data.get('descripcion_viaje')
-        }).execute()
-        
-        trip_id = trip_response.data[0]['id']
-
-        # 2. Guardar las actividades, enlazándolas al viaje
-        for activity in activities_data:
-            activity['trip_id'] = trip_id
-        
-        supabase.from_('activities').insert(activities_data).execute()
-
-        print("Itinerario guardado con éxito.")
-        return True
-
-    except Exception as e:
-        print(f"Ocurrió un error al guardar el itinerario: {e}")
         return None
