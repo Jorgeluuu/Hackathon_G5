@@ -472,7 +472,7 @@ body {
 .magical-button:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-medium);
-  background: linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%);
+  background: linear-gradient(135deg, var(--secondary-color) 0%, var(--primary-color) 100%);
 }
 
 .magical-button:hover::before {
