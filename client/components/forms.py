@@ -20,10 +20,6 @@ def create_planning_form():
             
             html.Hr(className="form-divider"),
             
-            create_dates_section(),
-            
-            html.Hr(className="form-divider"),
-            
             create_duration_budget_section(),
             
             html.Hr(className="form-divider"),
@@ -52,41 +48,13 @@ def create_destination_section():
             id="destination-input",
             options=[
                 {"label": "🏛️ Madrid Centro", "value": "Madrid Centro"},
-                {"label": "🌳 Madrid + Alrededores", "value": "Madrid Alrededores"},
                 {"label": "🎪 Madrid Completo", "value": "Madrid Completo"},
-                {"label": "🏰 Madrid + Toledo", "value": "Madrid Toledo"},
-                {"label": "🌲 Madrid + Segovia", "value": "Madrid Segovia"}
             ],
             placeholder="Selecciona tu destino mágico...",
             className="magical-select"
         ),
         html.Small(
             "El Ratoncito Pérez conoce los mejores rincones de cada zona 🐭",
-            className="form-help-text"
-        )
-    ], className="form-section")
-
-
-def create_dates_section():
-    """Sección de selección de fechas"""
-    today = date.today()
-    max_date = today + timedelta(days=365)
-    
-    return html.Div([
-        html.Label([
-            "📅 ¿Cuándo comenzará tu aventura?",
-            html.Span(" *", className="required-field")
-        ], className="form-label"),
-        dcc.DatePickerSingle(
-            id="date-picker",
-            date=today + timedelta(days=7),
-            min_date_allowed=today,
-            max_date_allowed=max_date,
-            display_format='DD/MM/YYYY',
-            className="magical-date-picker"
-        ),
-        html.Small(
-            "¡El Ratoncito Pérez está disponible todo el año! ✨",
             className="form-help-text"
         )
     ], className="form-section")
@@ -105,13 +73,13 @@ def create_duration_budget_section():
                 step=1,
                 value=2,
                 marks={
-                    1: {'label': '1 día', 'style': {'color': '#8B4513'}},
-                    2: {'label': '2 días', 'style': {'color': '#8B4513'}},
-                    3: {'label': '3 días', 'style': {'color': '#8B4513'}},
-                    4: {'label': '4 días', 'style': {'color': '#8B4513'}},
-                    5: {'label': '5 días', 'style': {'color': '#8B4513'}},
-                    6: {'label': '6 días', 'style': {'color': '#8B4513'}},
-                    7: {'label': '1 semana', 'style': {'color': '#8B4513'}}
+                    1: {'label': '1 día', 'style': {'color': "#FFFFFF"}},
+                    2: {'label': '2 días', 'style': {'color': "#FFFFFF"}},
+                    3: {'label': '3 días', 'style': {'color': "#FFFFFF"}},
+                    4: {'label': '4 días', 'style': {'color': "#FFFFFF"}},
+                    5: {'label': '5 días', 'style': {'color': "#FFFFFF"}},
+                    6: {'label': '6 días', 'style': {'color': "#FFFFFF"}},
+                    7: {'label': '1 semana', 'style': {'color': "#FFFFFF"}}
                 },
                 className="magical-slider"
             )
@@ -129,11 +97,11 @@ def create_duration_budget_section():
                 step=10,
                 value=80,
                 marks={
-                    30: {'label': '30€', 'style': {'color': '#8B4513'}},
-                    60: {'label': '60€', 'style': {'color': '#8B4513'}},
-                    100: {'label': '100€', 'style': {'color': '#8B4513'}},
-                    150: {'label': '150€', 'style': {'color': '#8B4513'}},
-                    200: {'label': '200€+', 'style': {'color': '#8B4513'}}
+                    30: {'label': '300€', 'style': {'color': "#FFFFFF"}},
+                    60: {'label': '600€', 'style': {'color': "#FFFFFF"}},
+                    100: {'label': '900€', 'style': {'color': "#FFFFFF"}},
+                    150: {'label': '1200€', 'style': {'color': "#FFFFFF"}},
+                    200: {'label': '1500€+', 'style': {'color': "#FFFFFF"}}
                 },
                 className="magical-slider"
             ),

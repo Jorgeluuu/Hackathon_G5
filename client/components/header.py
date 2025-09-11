@@ -9,7 +9,7 @@ def create_header():
                 # Logo y título
                 dbc.NavbarBrand([
                     html.Img(
-                        src="/assets/Ratoncito.png",
+                        src="assets/tooth-icon.png",
                         height="50px",
                         className="navbar-logo"
                     ),
